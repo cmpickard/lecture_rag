@@ -1,0 +1,15 @@
+WITH ontological_embedding AS (
+  SELECT embedding
+  FROM slide_chunks
+  WHERE lecture_title ILIKE '%ontological%'
+  LIMIT 1
+)
+SELECT
+  lecture_title,
+  substr(content, 1, 50),
+  1 - (embedding <=> (SELECT embedding FROM ontological_embedding)) AS similarity
+FROM slide_chunks
+WHERE 1 - (embedding <=> (SELECT embedding FROM ontological_embedding)) > 0.4
+  AND lecture_title NOT ILIKE '%ontological%'
+ORDER BY similarity DESC
+LIMIT 3;

@@ -1,0 +1,436 @@
+PRESENTATION: PHIL 1000 - 00 - Course Intro
+FOLDER:       RAG Slides > PHIL1000
+TOTAL SLIDES: 48
+============================================================
+
+SLIDE 1
+----------------------------------------
+[SLIDE BODY]
+An Introduction
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 2
+----------------------------------------
+[SLIDE BODY]
+This Week Read the syllabus if you haven’t already. Do the assigned reading (1st half of the Rowe article) Take the reading/syllabus quiz Complete the Week 1 lecture quizzes Post on the Discussion board for Week 1
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 3
+----------------------------------------
+[SLIDE BODY]
+But, like, what IS philosophy, man?
+
+[PRESENTER NOTES]
+Let me start today by trying to tackling a very common (and actually quite good) question. I don’t think that the average person has any idea what it is I do as a philosopher and MAYBE not even what philosophy is, as an academic discipline. So let me try to give a crude answer to that question.
+
+
+SLIDE 4
+----------------------------------------
+[SLIDE BODY]
+Some questions are neither important nor interesting
+
+[PRESENTER NOTES]
+Let me start answering that question by making a few observations. (These are very obvious observations, but sometimes you can get to pretty interesting places by combining the right obvious observations.)
+
+
+SLIDE 5
+----------------------------------------
+[SLIDE BODY]
+What’s the BEST way to wash a spoon?
+
+[PRESENTER NOTES]
+So for instance...
+
+
+SLIDE 6
+----------------------------------------
+[SLIDE BODY]
+Where does my lap go when I stand up?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 7
+----------------------------------------
+[SLIDE BODY]
+If ‘w’ is really just a double-u, why isn’t ‘ vacuum cleaner ’ spelled ‘ vacwm cleaner ’?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 8
+----------------------------------------
+[SLIDE BODY]
+Others questions are important , but are not very difficult
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 9
+----------------------------------------
+[SLIDE BODY]
+Is Sunny-D a healthy substitute for human breast milk?
+
+[PRESENTER NOTES]
+ANECDOTE
+
+
+SLIDE 10
+----------------------------------------
+[SLIDE BODY]
+Why are there no underwater nursing homes?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 11
+----------------------------------------
+[SLIDE BODY]
+Other questions are important and difficult but can (in principle) be answered via scientific inquiry
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 12
+----------------------------------------
+[SLIDE BODY]
+Can plants get sunburned?
+
+[PRESENTER NOTES]
+Good question! Not philosophy. We’re gonna have to do science about it
+
+
+SLIDE 13
+----------------------------------------
+[SLIDE BODY]
+How come my heart muscles are, like, working out non-stop but never get sore?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 14
+----------------------------------------
+[SLIDE BODY]
+Why do we have to “fall” asleep? Why can’t we just decide to enter sleep?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 15
+----------------------------------------
+[SLIDE BODY]
+So. All of that stuff is not-philosophy.
+
+[PRESENTER NOTES]
+The uninteresting, the easy, and the scientifically tractable.
+
+
+SLIDE 16
+----------------------------------------
+[SLIDE BODY]
+Here’s one pass at explaining what philosophers do... Philosophers try to answer the really difficult and really important questions that science doesn’t seem equipped to answer .
+
+[PRESENTER NOTES]
+It’s worth noting, if you ask 10 philosophers to explain what philosophy is and what philosophers do, you’re likely to get 10 different answers. So, feel free to take this answer with an appropriate amount of reservation.
+
+
+SLIDE 17
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+The history of philosophy also supports this way of thinking about the discipline – especially the contrast with science. If you go back and look at ancient Greek philosophy, you’ll quickly notice that a lot of it is actually proto-physics. People like aristotle and Epicurus (who was one of the first to believe in atoms) were all trying to do physics by just, like, thinking really hard. Then, eventually, we realized that you can learn about physics better by doing science about it, by conducting experiments. Thus, physics splintered off from philosophy and became it’s own scientific discipline. (For the most part…) Philosophers no longer do physics from the armchair, and physicists are no longer doing philosophy.
+
+
+SLIDE 18
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+We see this same pattern in the history of Psychology. Until around the turn of the 20th century, most of the best psychologists were just philosophers: they were trying to figure out how the human mind works by just thinking about it really hard. But, again, we eventually realized that psychology can be studied scientifically – with experimentation and carefully manipulated real-world observation. Thus, psychology splintered off from philosophy. It became it’s own discipline. (For the most part…) philosophers are no longer doing psychology, and psychologists are no longer considered philosophers.
+
+
+SLIDE 19
+----------------------------------------
+[SLIDE BODY]
+Here’s one pass at explaining what philosophers do... Philosophers try to answer the really difficult and really important questions that science doesn’t seem equipped to answer .
+
+[PRESENTER NOTES]
+So, again, this is a helpful way of understanding the field. One benefit of this way of describing philosophy is that it makes clear that the boundary around what counts as philosophy may change as science progresses and become better-able to answer various sorts of questions.
+
+
+SLIDE 20
+----------------------------------------
+[SLIDE BODY]
+Hard Questions Important Questions Questions Science Can’t Answer Philosophy
+
+[PRESENTER NOTES]
+For those who like to see things Venn Diagramatically...
+
+
+SLIDE 21
+----------------------------------------
+[SLIDE BODY]
+Some philosophical questions
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 22
+----------------------------------------
+[SLIDE BODY]
+Should be hate crimes be punished more severely than identical crimes done for non-hate-based reasons?
+
+[PRESENTER NOTES]
+This is a question about what we should value and how we should structure society.
+
+
+SLIDE 23
+----------------------------------------
+[SLIDE BODY]
+Is there such a thing as a life that’s not worth living – or, perhaps, a life that’s worse than no life at all ? If so, what would that look like?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 24
+----------------------------------------
+[SLIDE BODY]
+Are you the only real person in existence?
+
+[PRESENTER NOTES]
+For all you know; this is true. Maybe everyone else is a just a robot that God put here to teach you important lessons about life and love. Maybe I’m just a philosophy robot. Maybe you’re roommate is a clogs-the-drain-with-body-hair robot. Maybe the guy sitting next to you on the bus is a smells-like-weed robot. It kinda seems like that story is just as compatible with your evidence as the story where all the people around you have rich internal lives.
+
+
+SLIDE 25
+----------------------------------------
+[SLIDE BODY]
+Philosophy Ethics Logic Metaphysics Epistemology Aesthetics } Social / Political
+
+[PRESENTER NOTES]
+Here’s a (VERY ROUGH) breakdown of the different areas of philosophy.
+
+
+SLIDE 26
+----------------------------------------
+[SLIDE BODY]
+Philosophy Ethics Logic Metaphysics Epistemology Aesthetics } Social / Political
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 27
+----------------------------------------
+[SLIDE BODY]
+Metaphysics the branch of philosophy concerned with understanding which things exist, what they are like, and how they relate to each other.
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 28
+----------------------------------------
+[SLIDE BODY]
+Is time travel logically possible?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 29
+----------------------------------------
+[SLIDE BODY]
+Do we have free will?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 30
+----------------------------------------
+[SLIDE BODY]
+What sort of thing is the number 4? Like… does it have a location? Has it always existed? Could God destroy it?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 31
+----------------------------------------
+[SLIDE BODY]
+Does God exist? What’s She like?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 32
+----------------------------------------
+[SLIDE BODY]
+What does God have to do to preserve us in the afterlife? Snatch up our souls? Recreate our bodies?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 33
+----------------------------------------
+[SLIDE BODY]
+Ethics Logic Metaphysics Epistemology Aesthetics Social / Political Philosophy }
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 34
+----------------------------------------
+[SLIDE BODY]
+Epistemology the branch of philosophy concerned with understanding the nature of knowledge, belief, justification, & evidence.
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 35
+----------------------------------------
+[SLIDE BODY]
+What does it mean to know something, and what can we have knowledge of?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 36
+----------------------------------------
+[SLIDE BODY]
+What’s the difference between a reasonable belief and an unreasonable belief? Between a rational person and an irrational person?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 37
+----------------------------------------
+[SLIDE BODY]
+Do beliefs come in degrees?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 38
+----------------------------------------
+[SLIDE BODY]
+To what extent are difference religious beliefs reasonable , given the available evidence about the existence of God?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 39
+----------------------------------------
+[SLIDE BODY]
+How should we respond when someone who seems basically as smart and capable as us disagrees with us?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 40
+----------------------------------------
+[SLIDE BODY]
+Philosophy Ethics Logic Metaphysics Epistemology Aesthetics } Social / Political
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 41
+----------------------------------------
+[SLIDE BODY]
+Ethics the branch of philosophy concerned with understanding the nature of the right and the good: the rules of right action, the components of virtuous and vicious character, the details of what we owe to each other
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 42
+----------------------------------------
+[SLIDE BODY]
+Is it immoral to commit suicide?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 43
+----------------------------------------
+[SLIDE BODY]
+Which character traits are the morally good ones? Which ones are the bad ones?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 44
+----------------------------------------
+[SLIDE BODY]
+How do rights work, anyway? How many are there? Which sorts of beings have them?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 45
+----------------------------------------
+[SLIDE BODY]
+Should prostitution be legal?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 46
+----------------------------------------
+[SLIDE BODY]
+Should people be allowed to sell their organs?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 47
+----------------------------------------
+[SLIDE BODY]
+Should we be civil with people who disagree with us? (... and what about, like, Nazis?)
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 48
+----------------------------------------
+[SLIDE BODY]
+Course Outline Metaphysics Epistemology Ethics Week 5 Week 9 Week 1 Week 14
+
+[PRESENTER NOTES]
+(no notes for this slide)
+

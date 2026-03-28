@@ -1,0 +1,391 @@
+PRESENTATION: PHIL 1000 - 17 - Fake News
+FOLDER:       RAG Slides > PHIL1000
+TOTAL SLIDES: 43
+============================================================
+
+SLIDE 1
+----------------------------------------
+[SLIDE BODY]
+Fake News
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 2
+----------------------------------------
+[SLIDE BODY]
+A definition of ‘fake news’ Why it makes sense to share fake news The standard case of testimony Fake news as bent testimony Why it’s sometimes rational to believe fake news
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 3
+----------------------------------------
+[SLIDE BODY]
+Regina Rini (i) Develops a plausible definition of fake news and argues that it (ii) often makes prudential sense to share fake news , and (iii) is often individually rational to believe fake news .
+
+[PRESENTER NOTES]
+Rini’s thesis. She’s doing 3 distinct things.
+
+
+SLIDE 4
+----------------------------------------
+[SLIDE BODY]
+What is fake news ? More than just false news !
+
+[PRESENTER NOTES]
+Sometimes well-intentioned journalists get things wrong.
+
+
+SLIDE 5
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+Here’s an example of false news. One time a couple years ago the NYT had to correct a mistake where it falsely claimed that Elon Musk missed his brother’s wedding. He didn’t! Oops. The NYT regrets the error.
+
+
+SLIDE 6
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+Here’s another example. One time the NYT printed a sentence about how America’s trade deficit shrank during “the Time of Shedding and Cold Rocks.” They meant to say “during the Great Recession” but one of their copy-editors had a browser extension installed that automatically replaces all instances of the latter with the former. But I really don’t think that’s fake news. That’s not what people are worrying about when they worry about fake news. This is just false news - just an honest mistake made by a well-intentioned journalist, which was eventually noticed and corrected.
+
+
+SLIDE 7
+----------------------------------------
+[SLIDE BODY]
+What is fake news ? More than just false news ! … but what distinguishes false news from fake news ?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 8
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+Let’s look at some examples.
+
+
+SLIDE 9
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+This one just showed up a couple weeks ago. In this case, the author of the piece dolled-up the headline to look like a snopes article – as if the claim had already been fact-checked and found to be true. (which, no. No it’s not.) (ALSO I don’t know about you guys, but i try to avoid getting my news from “pissvortex.tumblr”.)
+
+
+SLIDE 10
+----------------------------------------
+[SLIDE BODY]
+Two varieties of fake news (1) Deceptive fake news Known to be false, intent is to deceive
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 11
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+The point here is to get people to believe this false thing about Clinton / Soros. The authors want you to read this piece and believe its content. Probably this is the kind of article that comes to mind when you think about “fake news”
+
+
+SLIDE 12
+----------------------------------------
+[SLIDE BODY]
+Two varieties of fake news (1) Deceptive fake news Known to be false, intent is to deceive (2) Bullshit fake news Truth value is irrelevant, intended to be profitable
+
+[PRESENTER NOTES]
+Rini suggests, however, that there’s another kind of article that also seems to count as fake news. Sometimes, she says, the article isn’t intentionally deceptive so much as it’s bullshit – made-up garbage.
+
+
+SLIDE 13
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+(this is NOT a CNN clip. It’s a faux-CNN clip that clicks through to a page filled with sexually explicit ads.) The point of this video clearly isn’t TO DECEIVE. The authors don’t have a secret agenda that can only be furthered w/ a Will Smith death hoax. Rather, the point is get people to click through and then be exposed to ads – to make the creators some money, in other words.
+
+
+SLIDE 14
+----------------------------------------
+[SLIDE BODY]
+“ A fake news story is one that purports to describe events in the real world, typically by mimicking the conventions of traditional media reportage, yet is known by its creators to be significantly false, and is transmitted with the two goals of being widely re-transmitted and of deceiving at least some of its audience. ” – Regina Rini
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 15
+----------------------------------------
+[SLIDE BODY]
+Fake news =df a news item known by its creators not to be reliable and created with the intent of being widely shared and/or believed. Two varieties of fake news (1) Deceptive fake news Known to be false, intent is to deceive (2) Bullshit fake news Truth value is irrelevant, intended to be profitable
+
+[PRESENTER NOTES]
+So here’s the definition that Rini proposes for “fake news”
+
+
+SLIDE 16
+----------------------------------------
+[SLIDE BODY]
+Regina Rini (i) Develops a plausible definition of fake news and argues that it (ii) often makes prudential sense to share fake news , and (iii) is often individually rational to believe fake news .
+
+[PRESENTER NOTES]
+Ok, so that’s part 1.
+
+
+SLIDE 17
+----------------------------------------
+[SLIDE BODY]
+How and why does fake news spread?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 18
+----------------------------------------
+[SLIDE BODY]
+Fake news is a form of testimony spread among social contacts. But it is defective in a way that most testimony isn’t. [ Strategy: Examine a standard case of testimony Compare that to a case of fake news ] Regina Rini
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 19
+----------------------------------------
+[SLIDE BODY]
+A standard case of testimony among social contacts You’re talking to your friend, Tessie (the Testifier.) She would really like you to believe that a certain proposition, P , is true. So she’s trying to decide whether and how strongly to assert P to you. (e.g. “ P .” “ Did you know that P ? ” “ I’ve heard that P, but I’m not sure what to think about that.” )
+
+[PRESENTER NOTES]
+<Ask someone for sample Ps – something you imagine someone wanting to convince you is true – could be, e.g, a political claim, a scientific claim, a bit of gossip, etc. >
+
+
+SLIDE 20
+----------------------------------------
+[SLIDE BODY]
+Basic Facts You want to avoid false beliefs (and to a lesser extent, to acquire true beliefs.) You trust Tessie’s testimony more than you would a stranger’s You will trust Tessie less if you discover her giving bad testimony Tessie wants you to believe (or seriously consider) that P (otherwise she wouldn’t be giving testimony) Tessie wants to preserve (or even increase) her credibility
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 21
+----------------------------------------
+[SLIDE BODY]
+} Basic Facts You want to avoid false beliefs (and to a lesser extent, to acquire true beliefs.) You trust Tessie’s testimony more than you would a stranger’s You will trust Tessie less if you discover her giving bad testimony Tessie wants you to believe (or seriously consider) that P (otherwise she wouldn’t be giving testimony) Tessie wants to preserve (or even increase) her credibility
+
+[PRESENTER NOTES]
+Back to the standard case. Look again at these two aims of Tessie’s. Notice that they are in tension.
+
+
+SLIDE 22
+----------------------------------------
+[SLIDE BODY]
+Tessie faces a trade-off: Assert Strongly + Risk Credibility OR Assert Weakly + Preserve Credibility
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 23
+----------------------------------------
+[SLIDE BODY]
+Suppose Tessie is very confident that P is true. What is she likely to say? Quiz
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 24
+----------------------------------------
+[SLIDE BODY]
+Suppose Tessie is not at all confident that P is true. What is she likely to say? Quiz
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 25
+----------------------------------------
+[SLIDE BODY]
+Suppose Tessie is not at all confident that P is true, but it’s really important to her that you believe that P. What is she likely to say? Quiz
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 26
+----------------------------------------
+[SLIDE BODY]
+Conclusion In the standard case of testimony among social contacts, the testifier risks her credibility whenever she gives testimony. This is a strong incentive for her to be reliable in her testimony.
+
+[PRESENTER NOTES]
+This is a good thing. We should celebrate it. This is one of things that keep friendships functioning and healthy in the long-run.)
+
+
+SLIDE 27
+----------------------------------------
+[SLIDE BODY]
+Strategy: Examine a standard case Compare that to a case of fake news
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 28
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+Your friend Tessie posts a link to this article. She doesn’t otherwise comment on it. You click through to the page and it looks like some clickbait fake news bullshit to you. You’re initial reaction is to be pissed at/disappointed in Tessie for sharing the link. But… I don’t know? Did she mean to imply that this is TRUE?
+
+
+SLIDE 29
+----------------------------------------
+[SLIDE BODY]
+It’s genuinely unclear whether Tessie is saying, “ Did you know AOC thinks it’s ok to eat pets? Disgusting. ” OR “ You hear this thing about AOC? Whoa – crazy stuff. BIG IF TRUE. ” OR “ Have you seen this crazy conspiracy theory? Hilarious. So good. ”
+
+[PRESENTER NOTES]
+THe point is this:
+
+
+SLIDE 30
+----------------------------------------
+[SLIDE BODY]
+“ [On social media] the epistemic relationship between testifier and testimony is ambiguous, as we haven’t yet settled on a norm whereby sharing entails assertion ... Many of us treat social media sharing as if it were ordinary testimony, at least until something goes wrong. This is why the “a retweet is not an endorsement” mantra causes so much argument; many of us implicitly assume that our social media interlocutors do believe what they share, even though we are vaguely aware they may later disclaim it. This is part of what makes social media testimony aberrant.” – Regina Rini
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 31
+----------------------------------------
+[SLIDE BODY]
+Offline Testimony Assert Strongly + Risk Credibility OR Assert Weakly + Preserve Credibility Social Media Testimony Assert Strongly + Preserve Credibility
+
+[PRESENTER NOTES]
+On social media, your friends don’t face the same trade-off between strong assertion and risking trust. That’s why fake news spreads. There is no strong trust incentive to STOP from sharing.
+
+
+SLIDE 32
+----------------------------------------
+[SLIDE BODY]
+Regina Rini Content sharing is an ambiguous form of assertion. This makes it less risky for the testifier (and, thus, more appealing ) to share otherwise suspicious content.
+
+[PRESENTER NOTES]
+This is the view. This is why Rini thinks it’s individually sensible for people to share fake news
+
+
+SLIDE 33
+----------------------------------------
+[SLIDE BODY]
+Regina Rini (i) Develops a plausible definition of fake news and argues that it (ii) often makes prudential sense to share fake news , and (iii) is often individually rational to believe fake news .
+
+[PRESENTER NOTES]
+Rini’s thesis. She’s doing 3 distinct things.
+
+
+SLIDE 34
+----------------------------------------
+[SLIDE BODY]
+Is it ever rational to believe a fake news story?
+
+[PRESENTER NOTES]
+Rini thinks the answer is sometimes Yes. She’s going to give us an argument!
+
+
+SLIDE 35
+----------------------------------------
+[SLIDE BODY]
+P1) If a person shares your political views, then it’s rational to trust them about political matters. On the rationality of believing fake news
+
+[PRESENTER NOTES]
+… But why would you think that’s true?
+
+
+SLIDE 36
+----------------------------------------
+[SLIDE BODY]
+“ Trusting a testifier regarding political news requires trusting her judgments about political importance, and this means believing that she has, by and large, the right political values. Partisan affiliation provides this information… generally speaking, one may (and perhaps should) attribute greater credibility to co-partisan testifiers than to others. This is simply reasonable , given that shared partisan affiliation points to shared normative values. ” – Regina Rini
+
+[PRESENTER NOTES]
+Well here’s what Rini says.
+
+
+SLIDE 37
+----------------------------------------
+[SLIDE BODY]
+A person with my same political values... ... will seem more reliable about what’s important...
+
+[PRESENTER NOTES]
+I take it, the basic idea is this...
+
+
+SLIDE 38
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+Consider how important you think the Clinton email scandal was. According to a 2016 ABC/Washington Post poll, 90% of Republicans said that Clinton’s handling of the email scandal led them to worry about how she’d act as president. Only ~30% of Democrats said the same. Presumably, then, a person who shares your political position is likely to agree with you about whether this news is important.
+
+
+SLIDE 39
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+Stormy Daniels claims that Trump cheated on his wife to have an affair with her.62% of Republicans think the truth of Stormy Daniel’s claim is irrelevant to Trump’s suitability for office. Only 10% of Democrats think it’s irrelevant whether Trump cheated on his wife with Stormy Daniels. Presumably, then, a person who shares your political position is likely to agree with you about whether this news is important.
+
+
+SLIDE 40
+----------------------------------------
+[SLIDE BODY]
+A person with my same political values... ... will seem more reliable about what’s important... … and so seem a more reliable source of political testimony
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 41
+----------------------------------------
+[SLIDE BODY]
+P1) If a person shares your political views, then it’s rational to trust them about political matters. P2) To trust someone about a domain, D, is (among other things) to regard them as a reliable source of testimony about D. C) If a person shares your political views, then it’s rational to regard them as a reliable source of political testimony. On the rationality of believing fake news
+
+[PRESENTER NOTES]
+P2 is, simply, a claim about what it means to trust someone. (P2 is not supposed to be controversial or suprising.)
+
+
+SLIDE 42
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+Suppose my friend Joe shares this article. Since I know that Joe and I agree about politics, I expect that Joe agrees with me about what’s important and i trust him about political matters. Thus, the fact that it’s joe sharing this article, gives me good reasons to take it seriously, to regard it as reliable testimony.
+
+
+SLIDE 43
+----------------------------------------
+[SLIDE BODY]
+P1) If a person shares your political views, then it’s rational to trust them about political matters. P2) To trust someone about a domain, D, is (among other things) to regard them as a reliable source of testimony about D. C) If a person shares your political views, then it’s rational to regard them as a reliable source of political testimony. On the rationality of believing fake news
+
+[PRESENTER NOTES]
+How might we respond to this argument? Well, P2 is very nearly true by definition, so the obvious target is P1. So we should ask ourselves… is it rational to trust people merely because you agree with them on political matters? That’s really what’s at issue here. That’s the place to press back against Rini, if you think she’s wrong about this.
+

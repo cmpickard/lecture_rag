@@ -1,0 +1,409 @@
+PRESENTATION: PHIL 1000 - 14 - The Problem of Induction
+FOLDER:       RAG Slides > PHIL1000
+TOTAL SLIDES: 45
+============================================================
+
+SLIDE 1
+----------------------------------------
+[SLIDE BODY]
+The Problem of Induction
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 2
+----------------------------------------
+[SLIDE BODY]
+Inductive Reasoning Definition + examples Inductive Skepticism The Problem of Induction On circular reasoning The argument
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 3
+----------------------------------------
+[SLIDE BODY]
+Inductive Reasoning
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 4
+----------------------------------------
+[SLIDE BODY]
+Te Inductive Reasoning is a type of reasoning (or argument / inference ) where we draw conclusions about things that we’ve not observed by pointing out patterns/regularities in the things that we have observed. Find pattern among the things we’ve observed Te future cases conclude the pattern applies to past cases other unobserved cases
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 5
+----------------------------------------
+[SLIDE BODY]
+You and I use inductive reasoning all time. (like, literally, every minute of our waking lives)
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 6
+----------------------------------------
+[SLIDE BODY]
+Inductive Inference (about the future) The next time I press the F key, an ‘f’ will appear on my screen. Pattern In the past, whenever I’ve pressed the F key, an ‘f’ has appeared on my screen.
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 7
+----------------------------------------
+[SLIDE BODY]
+Inductive Inference (about the future) The next time I watch golf on TV, I’ll find it miserably boring. Pattern Every time I’ve watched golf on TV, I’ve found it miserably boring.
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 8
+----------------------------------------
+[SLIDE BODY]
+Inductive Inference (about a whole category) All of the PHIL 1000 readings are less than 80 pages long. Pattern So far the PHIL 1000 readings have all been less than 80 pages long.
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 9
+----------------------------------------
+[SLIDE BODY]
+Inductive Inference (about distant cases) People in other towns would hate it if you snuck up behind them and slapped them with a fish. Pattern All the people in my town really hate it when you sneak up behind them and slap them with a fish.
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 10
+----------------------------------------
+[SLIDE BODY]
+Inductive Inference ? Pattern ? Quiz
+
+[PRESENTER NOTES]
+Give me an example of an infernce you’ve made today. What’s the pattern? What was the inference?
+
+
+SLIDE 11
+----------------------------------------
+[SLIDE BODY]
+Scientists also rely heavily on inductive reasoning .
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 12
+----------------------------------------
+[SLIDE BODY]
+Inductive Inference (about a whole category) All dogs cells contain DNA. Pattern All the dog cells we’ve examined so far have contained DNA.
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 13
+----------------------------------------
+[SLIDE BODY]
+Inductive Inference (about a whole category) No one will ever see a live dodo bird again (b/c they’re extinct.) Pattern No one has seen a live dodo bird in over 300 years.
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 14
+----------------------------------------
+[SLIDE BODY]
+Inductive Inference (about distant objects) Astronomical objects in galaxies we can’t observe also obey the laws of physics. Pattern All the astronomical objects we’ve observed obey the laws of physics.
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 15
+----------------------------------------
+[SLIDE BODY]
+Inductive Inference (about the past) Astronomical objects in the past also obeyed the laws of physics Pattern All the astronomical objects we’ve observed obey the laws of physics.
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 16
+----------------------------------------
+[SLIDE BODY]
+Inductive Inference (about the future) Astronomical objects in the future will also obey the laws of physics Pattern All the astronomical objects we’ve observed obey the laws of physics.
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 17
+----------------------------------------
+[SLIDE BODY]
+Inductive Skepticism
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 18
+----------------------------------------
+[SLIDE BODY]
+Skepticism is a family of philosophical views, according to which, We think have knowledge that __, but we don’t.
+
+[PRESENTER NOTES]
+Recall,
+
+
+SLIDE 19
+----------------------------------------
+[SLIDE BODY]
+Inductive Skepticism We think we know things on the basis of inductive reasoning , but we don’t.
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 20
+----------------------------------------
+[SLIDE BODY]
+The Problem of Induction
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 21
+----------------------------------------
+[SLIDE BODY]
+David Hume (1711 - 1776) is famous for his skepticism about inductive reasoning . Hume argues, while we use inductive reasoning all the time (and can’t help it!), this method cannot give us knowledge because the only way to justify induction is circular .
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 22
+----------------------------------------
+[SLIDE BODY]
+Circular Reasoning
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 23
+----------------------------------------
+[SLIDE BODY]
+Suppose your friend gets sucked into a religious cult. The cult-leader (Bob) says the Book of Bob is the inerrant word of God. The Book of Bob states that Bob is the infallible messenger of God. Are your friend’s new religious beliefs justified ?
+
+[PRESENTER NOTES]
+You ask your friend, “But why do you trust Bob? How do you know that Bob is infallible?” Your friend says, “Because our holy scripture – the Book of Bob – says that Bob is always right. The scripture is the inerrant word of God.” You ask, “Wait… how do you know that the scripture is infallible, though? Couldn’t the scripture be wrong about Bob?” Your friend says, “Well the scripture has to be infallible because Bob says it’s infallible.” “Wait… so Bob is infallible because the scripture says he is and the scripture is always right? But we know the scripture is always right because… Bob says so? You don’t see the problem with that?”
+
+
+SLIDE 24
+----------------------------------------
+[SLIDE BODY]
+The Book says Bob is infallible. Bob says the Book is inerrant.
+
+[PRESENTER NOTES]
+Hopefully, you can see the mistake here. If Bob justified scripture and the scripture justifies Bob, we never actually get any justification. We don’t have any good reason to trust Bob or the scripture.
+
+
+SLIDE 25
+----------------------------------------
+[SLIDE BODY]
+Everyone at your new school is so excited about Zane. You ask some people, “Why do you like Zane so much?” They each reply, “I guess I love how, like, popular he is!” Do you now have any good justification for liking Zane?
+
+[PRESENTER NOTES]
+You ask your friend, “But why do you trust Bob? How do you know that Bob is infallible?” Your friend says, “Because our holy scripture – the Book of Bob – says that Bob is always right. The scripture is the inerrant word of God.” You ask, “Wait… how do you know that the scripture is infallible, though? Couldn’t the scripture be wrong about Bob?” Your friend says, “Well the scripture has to be infallible because Bob says it’s infallible.” “Wait… so Bob is infallible because the scripture says he is and the scripture is always right? But we know the scripture is always right because… Bob says so? You don’t see the problem with that?”
+
+
+SLIDE 26
+----------------------------------------
+[SLIDE BODY]
+Zane is popular. Lots of people like Zane.
+
+[PRESENTER NOTES]
+Hopefully, you can see the mistake here. To say that Zane is popular just is to say that lots of people like him. But if the only reason why people like Zane in the first place is that he’s popular, then it’s not clear that anyone has a good reason for liking Zane. Is Zane likable? Is he a good guy? Should you like Zane? You have no justification for thinking so. His popularity isn’t justified, not really. It’s just self-perpetuatingly circular.
+
+
+SLIDE 27
+----------------------------------------
+[SLIDE BODY]
+Circular Reasoning is bad . Circular justification is not actually justifying.
+
+[PRESENTER NOTES]
+Here’s the punchiline. If the only justification you can give for a belief is circular, that belief isn’t actually justified.
+
+
+SLIDE 28
+----------------------------------------
+[SLIDE BODY]
+P1) For inductive reasoning to give us knowledge , there must be some non-circular justification for thinking inductive reasoning is reliable . The Problem of Induction
+
+[PRESENTER NOTES]
+This observation that circular reasoning is non-justifying is P1 of Hume’s argument. Circular justifiction is wack, so we need some non-circular justification for induction
+
+
+SLIDE 29
+----------------------------------------
+[SLIDE BODY]
+P1) For inductive reasoning to give us knowledge , there must be some non-circular justification for thinking inductive reasoning is reliable . P2) There’s no non-circular justification for thinking inductive reasoning is reliable . The Problem of Induction
+
+[PRESENTER NOTES]
+And here’s P2 of the Problem of Induction: The claim that inductive reasoning cannot be justified in any non-circular manner. That’s Hume’s contribution.
+
+
+SLIDE 30
+----------------------------------------
+[SLIDE BODY]
+Why P2? Why think induction has only circular justification?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 31
+----------------------------------------
+[SLIDE BODY]
+Inductive Inference (about the future) Tomorrow the sun will rise in the morning Pattern So far the sun always rises in the morning Why is this a good inference?
+
+[PRESENTER NOTES]
+Here’s the argument. Think about a standard inductive inference...
+
+
+SLIDE 32
+----------------------------------------
+[SLIDE BODY]
+Inductive Inference (about the future) Inductive reasoning will continue to be a reliable way to learn about the future. Pattern So far inductive reasoning has been a reliable way to learn about the future. Do we know it works from past experience ? No. That’s circular.
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 33
+----------------------------------------
+[SLIDE BODY]
+In the past inductive reasoning has worked Inductive reasoning in justified
+
+[PRESENTER NOTES]
+Hopefully, you can see the mistake here. How do we know induction is justifed? BEcause it’s always worked so far. Since it’s always worked so far, we conclude that it will continue to work in thefuture. Wait… how do we know that the future will resemble the past – how can we be sure that induction will keep working? Because Inductive Reasoning is justified! Etc.
+
+
+SLIDE 34
+----------------------------------------
+[SLIDE BODY]
+Inductive Inference (about the future) Tomorrow the sun will rise in the morning Pattern So far the sun always rises in the morning Why is this a good inference?
+
+[PRESENTER NOTES]
+So that won’t work. Let’s go back to our original question.
+
+
+SLIDE 35
+----------------------------------------
+[SLIDE BODY]
+Inference (about the future) The next triangle we see will have 3 sides Pattern All the triangles have 3 sides. Do we know it works b/c induction is logically necessary ?
+
+[PRESENTER NOTES]
+Think about this inference. (This is not inductive – it’s deductive .) You might think: We couldn’t be wrong about this! It’s impossible for the next triangle to have more or less than 3 sides. Maybe inductive reasoning is like this?
+
+
+SLIDE 36
+----------------------------------------
+[SLIDE BODY]
+Inference (about the future) Tomorrow the sun will rise in the morning Pattern So far the sun always rises in the morning No. Inductive inferences simply aren’t logically necessary. Do we know it works b/c induction is logically necessary ?
+
+[PRESENTER NOTES]
+We could in principle be wrong about the sun rising tomorrow. It’s perfectly possible for the sun to explode over night. Or for the earth to get hit by a big meteor or something.
+
+
+SLIDE 37
+----------------------------------------
+[SLIDE BODY]
+Inductive Inference (about a whole category) No one will ever see a live dodo bird again (b/c they’re extinct.) Pattern No one has seen a live dodo bird in over 300 years.
+
+[PRESENTER NOTES]
+Notice this inference ALSO don’t follow of logical necessity. We could be wrong about this! It’s probably a good inference, but it’s not literally incoherent to imagine that there might be a dodo out there that we missed
+
+
+SLIDE 38
+----------------------------------------
+[SLIDE BODY]
+Inductive Inference (about a whole category) All of the PHIL 1000 readings are less than 80 pages long. Pattern So far the PHIL 1000 readings have all been less than 80 pages long.
+
+[PRESENTER NOTES]
+You could be wrong about this, too! It’s probably true but it wouldn’t be logically incoherent for me to assign a reading over 80 pgs. (After all, I could assign a 100 pg paper merely to teach you an important lesson about induction you’re welcome )
+
+
+SLIDE 39
+----------------------------------------
+[SLIDE BODY]
+Inference (about the future) The next triangle we see will have 3 sides This conclusion follows by definition . Inductive inferences don’t follow by definition . They follow by induction .
+
+[PRESENTER NOTES]
+That is to say, In an inductive inference we aren’t saying “See how it follows as a matter of logical necessity that the Dodo is extinct, my keyboard is not broken, that the sun will rise tomorrow?” Those things are logically necessary at all! They are merely super likely, given how the future resembles the past.
+
+
+SLIDE 40
+----------------------------------------
+[SLIDE BODY]
+Inductive Inference (about the future) Tomorrow the sun will rise in the morning Pattern So far the sun always rises in the morning Why is this a good inference?
+
+[PRESENTER NOTES]
+So let’s return once again to our original quesiton.
+
+
+SLIDE 41
+----------------------------------------
+[SLIDE BODY]
+Inductive Inference (about the future) Tomorrow the sun will rise in the morning – because that’s what physics demands. Pattern So far the sun always rises in the morning Does it follow as a law of physics? Quiz
+
+[PRESENTER NOTES]
+We might say, “The laws of physics dictate that the sun will rise tomorrow. If it didn’t rise tomorrow, then one of the laws of physics will have been violated.” No it doesn’t. Why not? What doesn’t that work?
+
+
+SLIDE 42
+----------------------------------------
+[SLIDE BODY]
+Inductive Inference (about the future) Tomorrow everything will follow the laws of physics. Pattern All the thing we’ve ever observed obey the laws of physics. Why is this a good inference?
+
+[PRESENTER NOTES]
+Hopefully you can see: Appealing to the laws of physics simply pushes the question back a step. We simply ask, Why are we justified in thinking that the laws of physics will continue to be unchanging.
+
+
+SLIDE 43
+----------------------------------------
+[SLIDE BODY]
+In the past the laws of physics have stayed constant Inductive reasoning in justified
+
+[PRESENTER NOTES]
+Hopefully, you can see the mistake here. How do we know induction is justifed? Because Induction relies on the laws of physics which, so far, have been perfectly unchanging. Wait… how do we know that the laws of physics won’t change in the future? Because Inductive Reasoning is justified! Since the laws have been constant so far, they will continue to be constant. But how do we know that Inductive Reasoning is justifed? Etc.
+
+
+SLIDE 44
+----------------------------------------
+[SLIDE BODY]
+P1) For inductive reasoning to give us knowledge , there must be some non-circular justification for thinking inductive reasoning is reliable . P2) There’s no non-circular justification for thinking inductive reasoning is reliable . C) Inductive reasoning does not give us knowledge The Problem of Induction
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 45
+----------------------------------------
+[SLIDE BODY]
+Inductive Skepticism We think we know things on the basis of inductive reasoning , but we don’t.
+
+[PRESENTER NOTES]
+Thus, the Problem of Induction gets us Inductive Skepticism. Let me note in closing (as I noted last time) None of you are going to change the way you live because of this argument. (And actually, I don’t really expect any of you to be persuaded .) Hume, himself, acknowledged that we can’t help but use induction all the time and think ourselves justified. That’s not the point! The point isn’t to change your behavior. The point is get us to think more carefully about the foundations of our knowledge. We blithely assume that we have lots of knowledge and knowledge is easy to come by and easy to justify. The Problem of Induction (and the Skeptical arguments about the External World) seem to show us that it’s not so easy. Maybe we do have knowledge and maybe it is easy to come by. But it’s not easy to justify that knowledge. Our knowledge rests on a surprisingly shaky foundation.
+

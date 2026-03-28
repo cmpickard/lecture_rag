@@ -1,0 +1,544 @@
+PRESENTATION: PHIL 1000 - 23 - The Vulnerable World Hypothesis
+FOLDER:       RAG Slides > PHIL1000
+TOTAL SLIDES: 60
+============================================================
+
+SLIDE 1
+----------------------------------------
+[SLIDE BODY]
+The Vulnerable World Hypothesis
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 2
+----------------------------------------
+[SLIDE BODY]
+Technology & social change The urn of technologies metaphor What makes a tech devastating? The semi-anarchic default condition The Vulnerable World Hypothesis A taxonomy of black balls An aside about tragedies of the commons Solutions / Responses
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 3
+----------------------------------------
+[SLIDE BODY]
+Bostrom Very often, new technologies surprise us. They are put to different uses, have different effects than we expected.
+
+[PRESENTER NOTES]
+Recall this from Unit 1.
+
+
+SLIDE 4
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+So, for example:In the Phaedrus, the Greek philosopher Plato tells a story of the inventor of writing – who is imagines was Thoth, the Egyptian God of wisdom and learning Plato tells of Thoth presenting his new invention – WRITING! WORDS MADE FLESH! WORDS THAT MAY BE CALLED BACK EXACTLY AT AND PRECISELY ANY LATER TIME – to the king of Egypt. The king rebukes Thoth. This new invention, he argues, will ruin men’s minds and diminish their culture.
+
+
+SLIDE 5
+----------------------------------------
+[SLIDE BODY]
+“ The parent or inventor of an art is not always the best judge of the utility or disutility of his own inventions... This discovery of yours will create forgetfulness in the learners' souls, because they will not use their memories; they will trust to the external written characters and not remember for themselves. The technology you have discovered is an aid not to memory, but to reminiscence, and you give your disciples not truth, but only the semblance of truth; they will be hearers of many things and learners of nothing; they will be omniscient in appearance and will know nothing. ” – Plato, Phaedrus
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 6
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+I tell this story because (A) it’s funny! And (B) it’s contains an important kernel of truth – and a nice jumping off point for what I want to talk about today.
+
+
+SLIDE 7
+----------------------------------------
+[SLIDE BODY]
+The Golden Age of Illiteracy
+
+[PRESENTER NOTES]
+It’s funny because Plato apparently wants us to go back to some Golden Age of Illiteracy.You know – THE GOOD TIMES: when no one could read, no one could write, nothing was written down, the only records were those we could carry around in our heads
+
+
+SLIDE 8
+----------------------------------------
+[SLIDE BODY]
+But Plato was right that the invention of writing came at a price.
+
+[PRESENTER NOTES]
+Writing really did replace the old oral traditions by which humans had passed down information for the past tens of thousands of years.
+
+
+SLIDE 9
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+Before being written down, the Vedas – the oldest Hindu religious texts – were passed down by mouth from generation to generation.The ancient Indians developed all kinds of techniques for memorization and for preserving accuracy – to great success!
+
+
+SLIDE 10
+----------------------------------------
+[SLIDE BODY]
+Each new technology is unpredictable in its Social/economic consequences
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 11
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+But Plato *didn’t* anticipate a number of other important consequences of writing.Plato probably didn’t anticipate the printing press – which made it incredibly easy to copy writing, to disseminate written documents to the public
+
+
+SLIDE 12
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+Plato likely didn’t anticipate how writing would undergird *universal education* – education being something he prized highly – and would, thereby, raise the quality of living of large portions of humanity.
+
+
+SLIDE 13
+----------------------------------------
+[SLIDE BODY]
+Each new technology is unpredictable in its Social/economic consequences Net value (i.e. final balance of good vs. bad effects)
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 14
+----------------------------------------
+[SLIDE BODY]
+Probably we think Plato was wrong about writing In the final analysis, writing seems like a net good invention .
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 15
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+On the other hand, we got in WRONG about asbestos insulation.In the final analysis: Not a good tech.
+
+
+SLIDE 16
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+GPS is another example of technology that wound up being more useful than it’s inventors originally expected.It was originally developed by the military as a navigation system for ships and aircraft, but it turned out to have many more applications than that.(And, of course, it seems likely that the jury is still out on GPS – maybe the final analysis will find it a net evil?)
+
+
+SLIDE 17
+----------------------------------------
+[SLIDE BODY]
+Each new technology is unpredictable in its Social/economic consequences Net value (i.e. final balance of good vs. bad effects) Arrival date and technical details
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 18
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+We might note, for instance, how common it is for people to issue predictions about what the world will be like in the future. Even when they get the technologies right, they often get the *arrival date* and the *technical details* very wrong.PICTURED: cell phones, basically.
+
+
+SLIDE 19
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+Roombas!
+
+
+SLIDE 20
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+Fucking WHALE BUS.Damn. NOT YET. WAIT FOR US WHALE BUS
+
+
+SLIDE 21
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+Hover cars!
+
+
+SLIDE 22
+----------------------------------------
+[SLIDE BODY]
+(no text on this slide)
+
+[PRESENTER NOTES]
+It’s us! Wow!(Clcikers, but if you get the wrong answer you get hit!)
+
+
+SLIDE 23
+----------------------------------------
+[SLIDE BODY]
+One consequence of this unpredictability is that new tech is inherently risky . We can’t know in advance which new inventions will be good and which bad. SO FAR all new tech has been somewhere between very good & moderately bad ... But will that continue to be true? Are there any super-awful technologies out there waiting to be discovered?
+
+[PRESENTER NOTES]
+These observations lead us to our primary question for today.
+
+
+SLIDE 24
+----------------------------------------
+[SLIDE BODY]
+The Urn of Technologies
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 25
+----------------------------------------
+[SLIDE BODY]
+“ One way of looking at human creativity is as a process of pulling balls out of a giant urn. The balls represent possible ideas, discoveries, technological inventions. Over the course of history, we have extracted a great many balls—mostly white (beneficial) but also various shades of grey (moderately harmful ones and mixed blessings). The cumulative effect on the human condition has so far been overwhelmingly positive, and may be much better still in the future… What we haven’t extracted, so far, is a black ball: a technology that invariably or by default destroys the civilization that invents it. The reason is not that we have been particularly careful or wise in our technology policy.  We have just been lucky. ” – Nick Bostrom
+
+[PRESENTER NOTES]
+Bostrum offers us a helpful metaphor for thinking about this process – i.e. the process of discovering and developing and employing new technologies.
+
+
+SLIDE 26
+----------------------------------------
+[SLIDE BODY]
+White Balls Net good techs Grey Balls Net neutral to moderately bad techs Black Balls Catastrophically bad techs Bostrom – We’ve been lucky not to have pulled out a black ball.
+
+[PRESENTER NOTES]
+Since we cannot know what the net value of a new technology will be until after it’s invented, we won’t know whether a technology has devastating downsides until after it already exists. That we haven’t already screwed ourselves seems to be a matter of luck – that is, the result of processes outside of our control.
+
+
+SLIDE 27
+----------------------------------------
+[SLIDE BODY]
+“ ... to make the metaphor more realistic [we might] imagine that there are strings or elastic bands between some of the balls, so that when we pull on one of them we drag along several others to which it is linked. [Also] presumably the urn is highly tubular, since certain technologies must emerge before others can be reached (we are not likely to find a society that uses [both] jet planes and flint axes). The metaphor would also become more realistic if we imagine that there is not just one hand daintily exploring the urn: instead, picture a crowd of scuffling prospectors shoving in their arms in hopes of gold and glory and citations. ” – Nick Bostrom
+
+[PRESENTER NOTES]
+It’s not a perfect metaphor, obviously.
+
+
+SLIDE 28
+----------------------------------------
+[SLIDE BODY]
+What makes a technology a “ black ball ”?
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 29
+----------------------------------------
+[SLIDE BODY]
+Quiz
+
+[PRESENTER NOTES]
+Imagine a possible world where nuclear weapons turn out to be way easier and cheaper to make than they are in our world. There, the process of engineering a nuclear bomb requires no more than a Physics Minor’s worth of education, costs about $10 in materials, and takes a couple hours to construct. This technology is discovered by accident and multiple times, by different people in different countries. Information about these weapons can be found with a determined bit of Google searching. This is an example of black ball technology. QUIZ QUESTION: Why?
+
+
+SLIDE 30
+----------------------------------------
+[SLIDE BODY]
+This world is going to have a hard time avoiding catastrophe
+
+[PRESENTER NOTES]
+In OUR world, making a nuke multiple Physics PhDs, many many millions of dollars, and multiple years to make. It’s so hard to make a nuke in our world that only a handful of countries have managed it – and NOT for lack of trying on the part of other countries and groups. But in the Easy Nukes world, literally hundreds of thousands – maybe millions – of individuals are in a position to build their own nukes. Think about how hard it was to stop the world from ending when, like, 6 countries had access to nukes. Now imagine how hard it would be if 6 million people had access to nukes. They’re screwed, probably. It’s hard to see a way out for Easy Nukes world that doesn’t end VERY BADLY
+
+
+SLIDE 31
+----------------------------------------
+[SLIDE BODY]
+What makes a technology a “ black ball ”? It’s a function of 2 factors, (1) the tech’s inherent dangerousness (2) the social conditions of the societies that have access to it
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 32
+----------------------------------------
+[SLIDE BODY]
+How might the world in Easy Nukes prevent catastrophe? Quiz
+
+[PRESENTER NOTES]
+Think about this for a second. Suppose the cat is already out of the bag: information about how to make easy nukes is widely available and it’s basically impossible at this point to scrub it from the internet. (When has anyone ever successfully scrubbed information from the internet?) What sorts of desperate measures might societies adopt to prevent the world from going down in flames?
+
+
+SLIDE 33
+----------------------------------------
+[SLIDE BODY]
+We might prevent catastrophe … with preventative policing.
+
+[PRESENTER NOTES]
+Here are Bostrom’s suggestions: If we can anticipate people who want to misuse easy nukes, then we can stop worldwide destruction. (So in the movie Minority Report, there are these like magic beings who have visions of crimes before they happen. Then the state arrests the perp before the crime is ever committed.That’s not how predictive policing would likely work in our world – we don’t have any floaty magic 8-Ball people. We’d probably have to create some really extreme sort of surveillance state.)
+
+
+SLIDE 34
+----------------------------------------
+[SLIDE BODY]
+We might prevent catastrophe … with preventative policing. with a powerful global government.
+
+[PRESENTER NOTES]
+Bostrum also suggests that we’d need some sort of international organization with sufficient power to actually enforce policing decision in all countries around the world. After all, it’s not enough for the UNITED STATES to stamp out all use of Easy Nukes. That won’t save the world. We need to be able to prevent all people in all nations from misusing easy nukes.The easiest way to do that is with a global govt.
+
+
+SLIDE 35
+----------------------------------------
+[SLIDE BODY]
+We might prevent catastrophe … with preventative policing. with a powerful global government. with a homogenized populace ( no evil actors ).
+
+[PRESENTER NOTES]
+A final way Bostrom suggests would be to eliminate the possibility of bad actors. Part of what’s so worrying about the easy nukes world is that there are lots of religious and political extremists in the world, people with really strange world views who actually would want to destroy the world with nukes. How do you stop those people? How do you prevent those thousands of evil actors from ruining it for everyone? Well, we might try some sort of dystopian social conditioning. If we eliminate religious and political extremism, we could close that hole in our vulnerability. But how do you eliminate extremism? Idk. Some sort of overbearing social policies, genetic tampering, or brainwashing.
+
+
+SLIDE 36
+----------------------------------------
+[SLIDE BODY]
+What makes a technology a “ black ball ”? It’s a function of 2 factors, (1) the tech’s inherent dangerousness (2) the social conditions of the societies that have access to it semi-anarchic default condition ( SADC ) =df a global political situation in which (a) we aren’t good at preventing crimes (b) there’s no global government, and (c) there are some extremists.
+
+[PRESENTER NOTES]
+The ABSENCE of these 3 social features (i.e. preventative policies, strong global govt, homogeneous population) is what Bostrum refers to as the semi-anarchic default condition This is the way the world is now. This is the way the world has always been so far. We’ve never been good at preventative policing. We’ve never had a strong global government. We’ve never been free of extremism.
+
+
+SLIDE 37
+----------------------------------------
+[SLIDE BODY]
+“ Let us introduce the hypothesis that the urn of creativity contains at least one black ball. We can refer to this as the ​ Vulnerable World Hypothesis ​ . Intuitively, the hypothesis is that there is some level of technology at which civilization almost certainly gets destroyed unless quite extraordinary and historically unprecedented degrees of preventive policing and/or global governance are implemented... It is ​not​ a primary purpose of this paper to argue VWH is true… I regard that as an open question, though it would seem to me unreasonable, given the available evidence, to be at all confident that VWH is ​false​ .) ” – Nick Bostrom
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 38
+----------------------------------------
+[SLIDE BODY]
+Bostrom’s Thesis VWH – If we continue to develop new techn ologies and remain in the semi-anarchic default condition , we’ll eventually pull out a black ball . We should take seriously the Vulnerable World Hypothesis . black ball = a new technology that (a) kills off >15% of the global pop., o r (b) causes global GDP to drop by >50% SADC =df a global political situation in which (a) we aren’t good at preventing crimes (b) there’s no global government, and (c) there are some extremists.
+
+[PRESENTER NOTES]
+I should note: Obviously that definition of Black Ball is arbitrarily precise. There’s no particular reason to draw the line at 15% of the global population. But that’s no problem. Bostrum just wants us to think about black balls as technologies that devastate civilization – not necessary destroy them permanently. That’s why he’s drawn those lines where he has. Losing 15% of the global pop would be devastating. That’s like 1 out of every 7 people you know dying Likewise, a global economy cut in half would be devastating.
+
+
+SLIDE 39
+----------------------------------------
+[SLIDE BODY]
+A suggested taxonomy of black balls
+
+[PRESENTER NOTES]
+Bostrum suggests
+
+
+SLIDE 40
+----------------------------------------
+[SLIDE BODY]
+Type 1 | Ammo for Extremists A technology so destructive and easy to acquire that bad actors are likely to use it to devastate civilization. EX| Easy, devastating weapon Deadly biological agent Vulnerable system/economic lynchpin ???
+
+[PRESENTER NOTES]
+(i) the easy nukes case is an example of a Type 1 black ball. (ii) if we discovered or invented some super-virus – a disease that spreads quickly and can kill hundreds of millions – that would be a Type 1 black ball. The concern would be that just one instance in which that virus fell into the wrong hands would prob be enough for catastrophe (iii) another kind of Type 1 black ball could involve some system that is critical to the global economy and also really vulnerable to sabotage. If, say, there were some easy way to bring down the global banking industry. Or some easy way to destroy all the world’s wheat and rice crops. Or some easy way to bring down the internet. Any of those cases would be Type 1 vulnerabilities.
+
+
+SLIDE 41
+----------------------------------------
+[SLIDE BODY]
+Type 2a | The Threatened State Powerful actors have access to a devastating tech and have strong incentives to use it EX| A safe, first strike between super-powers A defensive, desperate strike by a small state A protectionist strike by an economic coalition ???
+
+[PRESENTER NOTES]
+Type 1 black balls are technologies that extremists might use to destroy the world. Type 2a black balls don’t require extremists. These are devastative technologies that could be used by basically rational agents – i.e. people who aren’t crazy and don’t have bizarre world views. In particular, Type 2a black balls involve superpowers, threatened states, or threatened super-groups. Basically, there could be cases where one of these groups has strong incentives to employ a technology defensively, but where doing so would lead to global devastation. At the beg. of the Cold War, the U.S and the Soviets had little ability to counter-strike if hit by a nuclear missile. Basically, whoever had nuked the other first would have won the Cold War AND would have emerged relatively unscathed. That gave both countries an incentive to strike first. (since that was the best way to guarantee safety) Suppose the U.S. is militarily dominating Ecuador. If E. has access to a deadly pathogen – and if they can innoculate their own population – releasing that might be their best bet to survive the war Suppose, like, OPEC is worried about Nuclear Fusion coming online.They might have good reason to cause nuclear meltdowns in all the fusion reactors to protect their economic dominance of the energy market.
+
+
+SLIDE 42
+----------------------------------------
+[SLIDE BODY]
+Type 2b | Supersize Tragedy of the Commons A technology that lots of individuals have incentives to adopt but that, in the aggregate, causes devastation.
+
+[PRESENTER NOTES]
+Type 2b black balls are also about incentives. Type 2a black balls involve technologies that non-crazy big states might have incentives to use. Type 2b techs are ones that lots of normal, non-extremist individuals might have incentives to use. There could be some technologies that are only devastating when millions or billions of individuals use them. That’s a classic Tragedy of the Commons scenario – just one where the stakes are absurdly high. So let us take a detour and talk about Tragedies of the Commons.
+
+
+SLIDE 43
+----------------------------------------
+[SLIDE BODY]
+SIDEBAR – Tragedies of the Commons
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 44
+----------------------------------------
+[SLIDE BODY]
+Tragedy of the Commons Members of a pop. face some choice ( to X or not to X ) such that, (a) a very bad collective outcome (O) results from lots of people X-ing , (b) each individual does better for herself by X-ing , (c) no individual thinks her decision determines whether O occurs. Less formally, a tragedy of the commons is a situation in which each individual has self-interested incentives to X , but bad things happen when everyone X’s.
+
+[PRESENTER NOTES]
+In the abstract, a Tragedy of the Commons ar
+
+
+SLIDE 45
+----------------------------------------
+[SLIDE BODY]
+X = Precautionary Antibiotic Use O = Antibiotic-resistant bacteria
+
+[PRESENTER NOTES]
+Members of a pop. face some choice (to use Antibiotics every time they feel sick) but a very bad collective outcome will result if lots of people do that. (namely, antibiotic resistant bacteria emerge and lots of people die from bacterial infections that would previously have been preventable). What makes this a tragedy of the commons is that: (a) each individual does better for herself by using antibiotics frivolously (they may occasionally prevent an illness and they get peace of mind.) (b) no individual thinks that her decision determines whether antibiotic resistant bacteria emerge and kill lots of people. (antibiotic resistance only emerges as the macro-level when millions of people are doing this.)
+
+
+SLIDE 46
+----------------------------------------
+[SLIDE BODY]
+Others mostly X Others mostly abstain from X-ing You X You abstain from X-ing Tragedy of the Commons
+
+[PRESENTER NOTES]
+This is how a decision theorist might represent this situation. There are four different outcomes for you, the individual.RANK THESE OUTCOMES
+
+
+SLIDE 47
+----------------------------------------
+[SLIDE BODY]
+2nd worst Best outcome Worst outcome 2nd best Others mostly X Others mostly abstain from X-ing You X You abstain from X-ing Tragedy of the Commons
+
+[PRESENTER NOTES]
+This is how a decision theorist might represent this situation
+
+
+SLIDE 48
+----------------------------------------
+[SLIDE BODY]
+2nd worst Best outcome Worst outcome 2nd best Others mostly X Others mostly abstain from X-ing You X You abstain from X-ing Tragedy of the Commons
+
+[PRESENTER NOTES]
+Suppose you know that other people are mostly going to X What should you do?
+
+
+SLIDE 49
+----------------------------------------
+[SLIDE BODY]
+2nd worst Best outcome Worst outcome 2nd best Others mostly X Others mostly abstain from X-ing You X You abstain from X-ing Tragedy of the Commons
+
+[PRESENTER NOTES]
+This is how a decision theorist might represent this situation
+
+
+SLIDE 50
+----------------------------------------
+[SLIDE BODY]
+2nd worst Best outcome Worst outcome 2nd best Others mostly X Others mostly abstain from X-ing You X You abstain from X-ing Tragedy of the Commons
+
+[PRESENTER NOTES]
+Suppose you know other people are mostly going to NOT X
+
+
+SLIDE 51
+----------------------------------------
+[SLIDE BODY]
+2nd worst Best outcome Worst outcome 2nd best Others mostly X Others mostly abstain from X-ing You X You abstain from X-ing Tragedy of the Commons
+
+[PRESENTER NOTES]
+This is how a decision theorist might represent this situation
+
+
+SLIDE 52
+----------------------------------------
+[SLIDE BODY]
+2nd worst Best outcome Worst outcome 2nd best Others mostly X Others mostly abstain from X-ing You X You abstain from X-ing Tragedy of the Commons
+
+[PRESENTER NOTES]
+So, regardless of what other people do, YOU DO BEST if you go ahead and X.But everyone else is in exactly the same situation! Everyone else notices this same fact: That regardless of what other people are doing, I do best by X-ing. So, everyone X’s
+
+
+SLIDE 53
+----------------------------------------
+[SLIDE BODY]
+X = Littering O = Nasty garbage planet
+
+[PRESENTER NOTES]
+Members of a pop. face some choice to litter or not-litter (a) a very bad collective outcome (disgusting public spaces) results from lots of people litering (b) each individual does a little better for herself when she litters (she doesn’t have to, like, hold onto garbage until she finds a trashcan) (c) no individual thinks her decision about whether to little is going to determine whether public spaces are disgusting and full of trash
+
+
+SLIDE 54
+----------------------------------------
+[SLIDE BODY]
+X – Having lots of children O – Overpopulation
+
+[PRESENTER NOTES]
+Members of a pop. face some choice (to have kids or not have kids) such that, having lots of kids, most people prefer to have kids, so they do better when they go ahead and have kids no individual thinks his/her decision about whether to have kids determines whether the earth becomes overpopulated for herself by
+
+
+SLIDE 55
+----------------------------------------
+[SLIDE BODY]
+A technology that lots of individuals have incentives to adopt but that in the aggregate causes devastation. EX| Super global warming Anti-vaxxing + super-pathogen Robot servant uprising ??? Type 2b | Supersize Tragedy of the Commons
+
+[PRESENTER NOTES]
+(i) Imagine a new technology that causes a climate problem like global warming but worse. Everyone’s individual contributions to the problem from using the tech are small but the net result is VERY BAD – much worse than the net results predicted for global warming (ii) Or imagine there’s some terrible disease ravaging the world (like, at least 10X worse than Covid), and there’s a vaccine but that the vaccine is a little dangerous. That might turn into a tragedy of the commons. If each individual would prefer not to get the vaccine (because its a little dangerous) that may be the rational thing for them to do – the one individual doesn’t contribute much to herd immunity – but the net result would be very bad.(iii) Or suppose we invent servant robots. Maybe there’s a small chance that they turn on us in a massive global uprising. Each individual may reason, I do best when I have a robot servant, even though my servant will add to the horde of evil robots in the case of an uprising. But what’s one more evil robot among millions? My choice doesn’t affect the outcome much.
+
+
+SLIDE 56
+----------------------------------------
+[SLIDE BODY]
+Type 0  | Some Big Oops A technology that carries a hidden risk and unexpectedly causes civilizational devastation EX| Unexpectedly dangerous physics experiment Malign (or accidentally zealous) A.I. Biology lab accident ???
+
+[PRESENTER NOTES]
+Finally, the last category is just black holes that we don’t see coming. Technologies that seem innocent but then accidentally destroy the world. (i) Back when the Large Hadron Collider was being built, people speculated that it might create a mini-black hole and swallow up the earth. That’s the kind of outcome Bostrum has in mind for Type O black balls. (ii) Some people have worried that this could happen if we ever developed a truly intelligent AI. If we messed up the programing, we might end up with a Superintelligence run amok, who seizes control of the economy b/c it’s been told to make paperclips – and damn it, it needs more resources to make paperclips. (iii) Other people have worried about biological researchers accidentally creating a super-pathogen in the lab. It gets out, kils millions. (iv) And, look, it’s hard to predict Type 0 black balls BY DEFINITION. This is a category of suprises.
+
+
+SLIDE 57
+----------------------------------------
+[SLIDE BODY]
+Responses to the VWH
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 58
+----------------------------------------
+[SLIDE BODY]
+VWH – If we continue to develop new tech and remain in the SADC , we’ll eventually pull out a black ball . We seem to have 4 options, (1) Stop developing new technologies (2) Exit the SADC (w/ dystopian social policies!) (3) Show that the VWH is clearly false (4) Do nothing
+
+[PRESENTER NOTES]
+(no notes for this slide)
+
+
+SLIDE 59
+----------------------------------------
+[SLIDE BODY]
+VWH – If we continue to develop new tech and remain in the SADC , we’ll eventually pull out a black ball . We seem to have 4 options, (1) Stop developing new technologies (2) Exit the SADC (w/ dystopian social policies!) (3) Show that the VWH is clearly false (4) Do nothing Quiz
+
+[PRESENTER NOTES]
+BUT if you think about it, Option 1 actally just collapses into – or requires – Option 2. Hopefully you can already sorta make out why that is. Why?
+
+
+SLIDE 60
+----------------------------------------
+[SLIDE BODY]
+VWH – If we continue to develop new tech and remain in the SADC , we’ll eventually pull out a black ball . We seem to have 4 options, (1) Stop developing new technologies (2) Exit the SADC (w/ dystopian social policies!) (3) Show that the VWH is clearly false (4) Do nothing
+
+[PRESENTER NOTES]
+But of course WE CANT SIMPLY STOP PEOPLE FROM DEVELOPING NEW TECH! The only way to literally and permanently stop technological progress would be by force: either by preventative policing, or with a strong global government, or maybe with some sort of social conditioning (to prevent people from being interested in science and progress) Thus, Option 1 actually just collapses into Option 2. Also, we should ask: how do we prevent all 4 varieties of black ball? It’s not enough only to prevent Type 1 or Type 0 black balls. We need to prevent them all!
+

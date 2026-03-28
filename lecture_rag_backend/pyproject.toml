@@ -1,0 +1,22 @@
+[project]
+name = "lecture-rag"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Caleb P"}
+]
+requires-python = ">=3.14,<4.0"
+dependencies = [
+    "flask (>=3.1.3,<4.0.0)",
+    "flask-cors (>=6.0.2,<7.0.0)",
+    "openai (>=2.30.0,<3.0.0)",
+    "dotenv (>=0.9.9,<0.10.0)",
+    "numpy (>=2.4.3,<3.0.0)",
+    "psycopg2 (>=2.9.11,<3.0.0)",
+    "tiktoken (>=0.12.0,<0.13.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
