@@ -4,7 +4,6 @@ NEXT UP:
                       -- other improvements?
 
 - think about which model to use                      
-- Proper front-end design
 
 
   OPTIONAL FEATURES:
@@ -14,6 +13,11 @@ NEXT UP:
     -- Objections ->
     -- Explainer ->
     -- Zoomer Mode -> "God is hype af no cap, bro." etc.
+  
+  -- More stylistic changes
+    -- dialog messages have a tag -- e.g. "Talkrates:"
+    -- A different font for the assistnat messages
+
 
   NOT SURE IF HELPFUL:
   -- Add routing (?)

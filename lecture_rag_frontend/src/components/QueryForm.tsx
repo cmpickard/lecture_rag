@@ -1,5 +1,5 @@
 import type { SyntheticEvent } from "react";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import type { Message } from '../models/message';
 import type { Query } from '../models/query'
 import { type Conversations, type Conversation } from '../models/conversations'
@@ -16,6 +16,15 @@ export default function QueryForm({ currConversation, setCurrConversation,
   }) {
 
   const [query, setQuery] = useState('');
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+
+  useEffect(() => {
+    const el = textareaRef.current;
+    if (el) {
+      el.style.height = 'auto';
+      el.style.height = el.scrollHeight + 'px';
+    }
+  }, [query]);
 
   async function handleSubmitQuery(event: SyntheticEvent) {
     event.preventDefault();
@@ -75,9 +84,9 @@ export default function QueryForm({ currConversation, setCurrConversation,
   }
 
   return (
-  <form onSubmit={handleSubmitQuery}>
-    <textarea rows={25} cols={80} onChange={handleTyping} value={query}></textarea>
-    <button>Submit</button>
+  <form id="query-form" onSubmit={handleSubmitQuery}>
+    <textarea id="query-input" ref={textareaRef} onChange={handleTyping} value={query} placeholder="Ask a question..."></textarea>
+    <button id="submit-btn">Submit</button>
   </form>
   )
 }

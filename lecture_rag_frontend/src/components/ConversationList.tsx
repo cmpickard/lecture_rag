@@ -27,10 +27,21 @@ export default function ConversationList({setCurrConversation, currConversationI
   let ids = Object.keys(conversations);
 
   return(
-    <ul>
+    <ul id="conversation-list">
       {ids.map(id => {
-        return <li key={id}><a id={id} href="#" onClick={handleSwitchConvo}>{conversations[id].summary ?? id}</a></li>
+        return (
+          <li key={id} className="convo-item">
+            <a id={id} href="#" onClick={handleSwitchConvo}
+               className={`convo-link${id === currConversationId ? ' active' : ''}`}>
+              {conversations[id].summary ?? id}
+            </a>
+          </li>
+        )
       })}
-      <li key="new-convo"><a href="#" onClick={handleSwitchConvo}>Start a new conversation</a></li>
+      <li key="new-convo" className="convo-item new-convo-item">
+        <a id="" href="#" onClick={handleSwitchConvo} className="convo-link">
+          + New conversation
+        </a>
+      </li>
     </ul>)
 }

@@ -6,11 +6,11 @@ export default function DialogBox({currConversation}:
   
   let nextKey = 0;
 
-  return (<ul>
+  return (<ul id="dialog-box">
     {
       !currConversation || currConversation.history.length === 0 ? '' :
       currConversation.history.map(message => {
-        return <li key={nextKey++} data-role={message.role}>{message.content}</li>
+        return <li key={nextKey++} className="message" data-role={message.role}>{message.content}</li>
       })
     }
   </ul>)

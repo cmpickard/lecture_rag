@@ -46,19 +46,25 @@ function App() {
   useEffect(getConversations, []);
 
   return (
-    <>
+    <div id="app">
       <Header/>
-      <DialogBox currConversation={currConversation}/>
-      <QueryForm currConversation={currConversation}
-                 setCurrConversation={setCurrConversation}
-                 setConversations={setConversations}
-                 currConversationId={currConversationId}
-                 setCurrConversationId={setCurrConversationId}/>
-      <ConversationList conversations={conversations}
-                        currConversationId={currConversationId}
-                        setCurrConversationId={setCurrConversationId}
-                        setCurrConversation={setCurrConversation}/>
-    </>
+      <div id="main-layout">
+        <div id="chat-panel">
+          <DialogBox currConversation={currConversation}/>
+          <QueryForm currConversation={currConversation}
+                     setCurrConversation={setCurrConversation}
+                     setConversations={setConversations}
+                     currConversationId={currConversationId}
+                     setCurrConversationId={setCurrConversationId}/>
+        </div>
+        <nav id="sidebar">
+          <ConversationList conversations={conversations}
+                            currConversationId={currConversationId}
+                            setCurrConversationId={setCurrConversationId}
+                            setCurrConversation={setCurrConversation}/>
+        </nav>
+      </div>
+    </div>
   )
 }
 
