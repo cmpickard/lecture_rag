@@ -1,11 +1,10 @@
 NEXT UP:
-- Adjust system prompt 
+- Tinker with system prompt:
                       -- decide how much external knowledge to allow
                       -- other improvements?
 
 - think about which model to use                      
 - Proper front-end design
-- Reorganize backend to be more pythonic / flasky
 
 
   OPTIONAL FEATURES:
