@@ -7,16 +7,20 @@ NEXT UP:
 
 
   OPTIONAL FEATURES:
-  -- Add an easy way for the LLM to offer a list of topics that it can respond to
+  -- Add an easy way for the LLM to offer a list of topics that it can respond to +++ This would be great for a demo!
   -- Personality drop-down menu -- each selection tied to a different system prompt
     -- Socratic -> prompts the user to think through things with questions
-    -- Objections ->
+    -- Objections -> reasoning model?
     -- Explainer ->
     -- Zoomer Mode -> "God is hype af no cap, bro." etc.
+    -- Paper mode? -> allows access to outside sources
+     
   
   -- More stylistic changes
     -- dialog messages have a tag -- e.g. "Talkrates:"
     -- A different font for the assistnat messages
+  
+  -- Add support for markdown in the UI
 
 
   NOT SURE IF HELPFUL:
