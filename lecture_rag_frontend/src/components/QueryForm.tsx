@@ -16,6 +16,7 @@ export default function QueryForm({ currConversation, setCurrConversation,
   }) {
 
   const [query, setQuery] = useState('');
+  const [isDialogue, setIsDialogue] = useState(false);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
@@ -34,7 +35,9 @@ export default function QueryForm({ currConversation, setCurrConversation,
     setCurrConversation({history: new_history, summary: currConversation.summary});
     setQuery('');
 
-    let new_query: Query = { ...new_msg, conversation_id: currConversationId };
+    let new_query: Query = { ...new_msg,
+                             conversation_id: currConversationId,
+                             dialogue_mode: isDialogue };
 
     // submit query to backend using Query type
     let body = JSON.stringify(new_query);
@@ -85,8 +88,23 @@ export default function QueryForm({ currConversation, setCurrConversation,
 
   return (
   <form id="query-form" onSubmit={handleSubmitQuery}>
-    <textarea id="query-input" ref={textareaRef} onChange={handleTyping} value={query} placeholder="Ask a question..."></textarea>
-    <button id="submit-btn">Submit</button>
+    <div id="query-row">
+      <textarea id="query-input" ref={textareaRef} onChange={handleTyping} value={query} placeholder="Ask a question..."></textarea>
+      <button id="submit-btn">Submit</button>
+    </div>
+    <div id="mode-row">
+      <div className="switch-wrapper">
+        <span className={`switch-label${!isDialogue ? ' active-mode' : ''}`}>Instruction</span>
+        <label className="switch" htmlFor="toggle-option">
+          <input type="checkbox" id="toggle-option" onChange={e => setIsDialogue(e.target.checked)} />
+          <span className="slider"></span>
+        </label>
+        <span className={`switch-label${isDialogue ? ' active-mode' : ''}`}>Dialogue</span>
+        <span className="tooltip-anchor">?
+          <span className="tooltip-text">Use <strong>Instruction Mode</strong> for quick, direct explanations. Use <strong>Dialogue Mode</strong> for deeper investigation.</span>
+        </span>
+      </div>
+    </div>
   </form>
   )
 }

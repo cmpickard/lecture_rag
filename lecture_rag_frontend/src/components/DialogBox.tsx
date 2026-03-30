@@ -11,7 +11,9 @@ export default function DialogBox({currConversation}:
     {
       !currConversation || currConversation.history.length === 0 ? '' :
       currConversation.history.map(message => {
-        return <li key={nextKey++} className="message" data-role={message.role}><ReactMarkdown>{message.content}</ReactMarkdown></li>
+        return  <li key={nextKey++} className="message" data-role={message.role}>
+                  <span id='name-tag'>{message.role === 'assistant' ? 'Talkrates' : 'You'}</span><ReactMarkdown>{message.content}</ReactMarkdown>
+                </li>
       })
     }
   </ul>)

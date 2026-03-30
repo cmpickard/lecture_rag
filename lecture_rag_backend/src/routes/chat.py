@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 
-from src.config import MODEL, SYSTEM_PROMPT_PATH
+from src.config import BASIC_MODEL, DIALOGUE_MODEL, BASIC_PROMPT_PATH, DIALOGUE_PROMPT_PATH
 from src.extensions import client
 from src.services.build_prompt import build_prompt
 from src.services.context_retrieval import retrieve_most_similar
@@ -30,6 +30,7 @@ def contact_llm():
     data = request.get_json()
     query = data["content"]
     conversation_id = data["conversation_id"]
+    dialogue_mode = data["dialogue_mode"]
 
     context = retrieve_most_similar(query)
 
@@ -42,13 +43,19 @@ def contact_llm():
         history = result
         update_history("user", query, conversation_id)
 
-    with open(SYSTEM_PROMPT_PATH, "r") as f:
-        instructions = f.read().format(context=context, history=history)
+    if (dialogue_mode == False):
+        with open(BASIC_PROMPT_PATH, "r") as f:
+            instructions = f.read().format(context=context, history=history)
+    elif (dialogue_mode == True):
+        with open(DIALOGUE_PROMPT_PATH, "r") as f:
+            instructions = f.read().format(context=context, history=history)
+    else:
+        print("DIALOG_MODE IS NOT A BOOLEAN")
 
     prompt = build_prompt(instructions, query)
 
     response = client.responses.create(
-        model=MODEL,
+        model=BASIC_MODEL if dialogue_mode == False else DIALOGUE_MODEL,
         input=prompt,
         max_output_tokens=1024,
     )

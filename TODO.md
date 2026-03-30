@@ -1,25 +1,19 @@
-NEXT UP:
-- Tinker with system prompt:
-                      -- decide how much external knowledge to allow
-                      -- other improvements?
-
-- think about which model to use        
-- get markdown working              
-
+NEXT UP:     
+- Add a way to delete conversations
+- Make markdown appear prettier
 
   OPTIONAL FEATURES:
-  -- Add an easy way for the LLM to offer a list of topics that it can respond to => +++ This would be great for a demo!
   -- Personality drop-down menu -- each selection tied to a different system prompt
     -- Socratic -> prompts the user to think through things with questions
     -- Objections -> reasoning model?
     -- Explainer ->
     -- Zoomer Mode -> "God is hype af no cap, bro." etc.
     -- Paper mode? -> allows access to outside sources
-     
-  
-  -- More stylistic changes
-    -- dialog messages have a tag -- e.g. "Talkrates:"
-    -- A different font for the assistant messages
+    ==> OR, query classification
+    
+  -- MAYBE: Single slider that toggles between Explainer mode and Dialogue mode
+    -- the former is fast and straightfoward, using a smaller model
+    -- the latter is slower and smarter, using a reasoning model
 
 
   NOT SURE IF HELPFUL:

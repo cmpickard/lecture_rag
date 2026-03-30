@@ -1,4 +1,4 @@
-from src.config import MODEL
+from src.config import BASIC_MODEL
 from src.extensions import client
 
 
@@ -10,7 +10,7 @@ def generate_summary(history):
     {history}
   """
     response = client.responses.create(
-        model=MODEL,
+        model=BASIC_MODEL,
         input=prompt,
     )
     return response.output_text
