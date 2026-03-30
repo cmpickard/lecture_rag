@@ -3,11 +3,12 @@ NEXT UP:
                       -- decide how much external knowledge to allow
                       -- other improvements?
 
-- think about which model to use                      
+- think about which model to use        
+- get markdown working              
 
 
   OPTIONAL FEATURES:
-  -- Add an easy way for the LLM to offer a list of topics that it can respond to +++ This would be great for a demo!
+  -- Add an easy way for the LLM to offer a list of topics that it can respond to => +++ This would be great for a demo!
   -- Personality drop-down menu -- each selection tied to a different system prompt
     -- Socratic -> prompts the user to think through things with questions
     -- Objections -> reasoning model?
@@ -18,9 +19,7 @@ NEXT UP:
   
   -- More stylistic changes
     -- dialog messages have a tag -- e.g. "Talkrates:"
-    -- A different font for the assistnat messages
-  
-  -- Add support for markdown in the UI
+    -- A different font for the assistant messages
 
 
   NOT SURE IF HELPFUL:
