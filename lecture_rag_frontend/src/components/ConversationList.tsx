@@ -1,24 +1,26 @@
 import type { SyntheticEvent } from 'react';
-import { type Conversations, type Conversation } from '../models/conversations.ts'
+import { type Conversations, type Conversation } from '../types/conversation'
+import { deleteConversation } from '../api/conversationApi'
 
-export default function ConversationList({setCurrConversation, currConversationId, setCurrConversationId, conversations, setConversations}:
-    { 
+export default function ConversationList({ setCurrConversation, currConversationId, setCurrConversationId, conversations, setConversations, removeIdFromStorage }:
+    {
       setCurrConversation: React.Dispatch<React.SetStateAction<Conversation>>,
       currConversationId: string,
       setCurrConversationId: React.Dispatch<React.SetStateAction<string>>,
       conversations: Conversations,
-      setConversations: React.Dispatch<React.SetStateAction<Conversations>>
+      setConversations: React.Dispatch<React.SetStateAction<Conversations>>,
+      removeIdFromStorage: (id: string) => void,
     }) {
 
   function handleSwitchConvo(event: SyntheticEvent) {
     event.preventDefault();
-    let target = event.target as HTMLAnchorElement;
-    let conversation_id = target.id;
+    const target = event.target as HTMLAnchorElement;
+    const conversation_id = target.id;
     if (conversation_id === currConversationId) {
       return;
     } else if (conversation_id === "") {
       setCurrConversationId('');
-      setCurrConversation({history: [], summary: ''});
+      setCurrConversation({ history: [], summary: null });
     } else {
       setCurrConversationId(conversation_id);
       setCurrConversation(conversations[conversation_id]);
@@ -27,42 +29,28 @@ export default function ConversationList({setCurrConversation, currConversationI
 
   async function handleDeleteConvo(event: SyntheticEvent) {
     event.preventDefault();
-    let target = event.currentTarget as HTMLFormElement;
-    let resource_id = target.dataset.id;
+    const target = event.currentTarget as HTMLFormElement;
+    const resource_id = target.dataset.id;
     if (resource_id === undefined) return;
 
-    let options = {
-      method: 'DELETE'
-    }
-
     try {
-      let response = await fetch(`http://localhost:3000/api/delete/${resource_id}`, options);
-      if (response.ok) {
-        // delete resource_id from localstorage
-        let rawIds = localStorage.getItem("conversation_ids");
-        let ids: Array<string> = rawIds ? JSON.parse(rawIds) : [];
-        let filtered_ids = ids.filter(id => id !== resource_id);
-        localStorage.setItem("conversation_ids", JSON.stringify(filtered_ids));
-        // delete conversation from conversations state to trigger refresh
-        let convo_copy = Object.assign({}, conversations);
-        delete convo_copy[resource_id];
-        setConversations(convo_copy);
-        // set current conversation to new convo if user was looking at deleted convo
-        if (resource_id === currConversationId) {
-          setCurrConversationId('');
-          setCurrConversation({history: [], summary: ''});
-        }
-      } else {
-        console.log(response.statusText);
+      await deleteConversation(resource_id);
+      removeIdFromStorage(resource_id);
+      const convo_copy = Object.assign({}, conversations);
+      delete convo_copy[resource_id];
+      setConversations(convo_copy);
+      if (resource_id === currConversationId) {
+        setCurrConversationId('');
+        setCurrConversation({ history: [], summary: null });
       }
-    } catch(err: Error | unknown) {
+    } catch (err: unknown) {
       console.error(err);
     }
   }
 
-  let ids = Object.keys(conversations);
+  const ids = Object.keys(conversations);
 
-  return(
+  return (
     <ul id="conversation-list">
       {ids.map(id => {
         return (
@@ -80,5 +68,6 @@ export default function ConversationList({setCurrConversation, currConversationI
           + New conversation
         </a>
       </li>
-    </ul>)
+    </ul>
+  )
 }

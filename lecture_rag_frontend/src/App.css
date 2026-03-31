@@ -87,6 +87,16 @@ html, body, #root {
   margin-top: 0.2em;
 }
 
+/* ---- Error banner ---- */
+#error-banner {
+  background-color: #fde8e8;
+  color: #8a1010;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.88rem;
+  padding: 0.5rem 1.5rem;
+  border-bottom: 1px solid #f0b0b0;
+}
+
 /* ---- Chat panel ---- */
 #chat-panel {
   display: flex;
@@ -108,7 +118,7 @@ html, body, #root {
   scrollbar-color: var(--cg-border) transparent;
 }
 
-#name-tag {
+.name-tag {
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
   color: var(--cg-nametag);
@@ -318,9 +328,14 @@ html, body, #root {
   transition: background-color 0.2s, box-shadow 0.2s;
 }
 
-#submit-btn:hover {
+#submit-btn:hover:not(:disabled) {
   background-color: var(--cg-crimson-hover);
   box-shadow: 0 2px 8px rgba(107, 29, 44, 0.35);
+}
+
+#submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 /* ---- Sidebar ---- */

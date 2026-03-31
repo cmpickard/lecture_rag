@@ -1,4 +1,4 @@
-import { type Conversation } from '../models/conversations.ts'
+import { type Conversation } from '../types/conversation'
 import ReactMarkdown from 'react-markdown';
 
 export default function DialogBox({currConversation}:
@@ -12,7 +12,7 @@ export default function DialogBox({currConversation}:
       !currConversation || currConversation.history.length === 0 ? '' :
       currConversation.history.map(message => {
         return  <li key={nextKey++} className="message" data-role={message.role}>
-                  <span id='name-tag'>{message.role === 'assistant' ? 'Talkrates' : 'You'}</span><ReactMarkdown>{message.content}</ReactMarkdown>
+                  <span className='name-tag'>{message.role === 'assistant' ? 'Talkrates' : 'You'}</span><ReactMarkdown>{message.content}</ReactMarkdown>
                 </li>
       })
     }

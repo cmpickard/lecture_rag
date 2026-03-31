@@ -1,22 +1,26 @@
 import type { SyntheticEvent } from "react";
 import { useState, useRef, useEffect } from "react";
-import type { Message } from '../models/message';
-import type { Query } from '../models/query'
-import { type Conversations, type Conversation } from '../models/conversations'
+import type { Message } from '../types/message';
+import type { Query } from '../types/query'
+import { type Conversations, type Conversation } from '../types/conversation'
+import { postQuery } from '../api/conversationApi'
 
 export default function QueryForm({ currConversation, setCurrConversation,
                                     setConversations,
-                                    currConversationId, setCurrConversationId, }:
+                                    currConversationId, setCurrConversationId,
+                                    addIdToStorage }:
   {
     currConversation: Conversation,
     setCurrConversation: React.Dispatch<React.SetStateAction<Conversation>>,
     setConversations: React.Dispatch<React.SetStateAction<Conversations>>,
     currConversationId: string,
-    setCurrConversationId: React.Dispatch<React.SetStateAction<string>>
+    setCurrConversationId: React.Dispatch<React.SetStateAction<string>>,
+    addIdToStorage: (id: string) => void,
   }) {
 
   const [query, setQuery] = useState('');
   const [isDialogue, setIsDialogue] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
@@ -29,60 +33,42 @@ export default function QueryForm({ currConversation, setCurrConversation,
 
   async function handleSubmitQuery(event: SyntheticEvent) {
     event.preventDefault();
-    // first add user query to the conversation array and reset textarea
-    let new_msg: Message = { role: 'user', content: query };
-    let new_history = [...currConversation.history, new_msg]
-    setCurrConversation({history: new_history, summary: currConversation.summary});
+    const new_msg: Message = { role: 'user', content: query };
+    const new_history = [...currConversation.history, new_msg];
+    setCurrConversation({ history: new_history, summary: currConversation.summary });
     setQuery('');
 
-    let new_query: Query = { ...new_msg,
-                             conversation_id: currConversationId,
-                             dialogue_mode: isDialogue };
+    const new_query: Query = { ...new_msg, conversation_id: currConversationId, dialogue_mode: isDialogue };
 
-    // submit query to backend using Query type
-    let body = JSON.stringify(new_query);
-    let options = {
-      method: 'POST',
-      body: body,
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    };
-
+    setIsSubmitting(true);
     try {
-      let response = await fetch('http://localhost:3000', options);
+      const message = await postQuery(new_query);
 
-      if (response.ok) {
-        let data: unknown = await response.json();
-        let message = data as Query;
-
-        if (currConversationId === '') {
-          let rawIds = localStorage.getItem("conversation_ids");
-          let ids: Array<string> = rawIds ? JSON.parse(rawIds) : [];
-          ids.push(message.conversation_id);
-          localStorage.setItem("conversation_ids", JSON.stringify(ids));
-          setCurrConversationId(message.conversation_id);
-          setConversations(prev => ({
-            ...prev,
-            [message.conversation_id]: { history: [...new_history, { role: message.role, content: message.content }], summary: message.summary ?? null }
-          }));
-        }
-
-        setCurrConversation(prev => ({
-          history: [...prev.history, { role: message.role, content: message.content }],
-          summary: prev.summary
+      if (currConversationId === '') {
+        addIdToStorage(message.conversation_id);
+        setCurrConversationId(message.conversation_id);
+        setConversations(prev => ({
+          ...prev,
+          [message.conversation_id]: {
+            history: [...new_history, { role: message.role, content: message.content }],
+            summary: message.summary ?? null,
+          }
         }));
-
-      } else {
-        console.error(response.status);
       }
-    } catch (error: Error | unknown) {
+
+      setCurrConversation(prev => ({
+        history: [...prev.history, { role: message.role, content: message.content }],
+        summary: prev.summary,
+      }));
+    } catch (error: unknown) {
       console.error(error);
+    } finally {
+      setIsSubmitting(false);
     }
   }
 
   function handleTyping(event: SyntheticEvent) {
-    let target = event.target as HTMLFormElement
+    const target = event.target as HTMLTextAreaElement;
     setQuery(target.value);
   }
 
@@ -90,7 +76,7 @@ export default function QueryForm({ currConversation, setCurrConversation,
   <form id="query-form" onSubmit={handleSubmitQuery}>
     <div id="query-row">
       <textarea id="query-input" ref={textareaRef} onChange={handleTyping} value={query} placeholder="Ask a question..."></textarea>
-      <button id="submit-btn">Submit</button>
+      <button id="submit-btn" disabled={isSubmitting}>{isSubmitting ? '...' : 'Submit'}</button>
     </div>
     <div id="mode-row">
       <div className="switch-wrapper">
