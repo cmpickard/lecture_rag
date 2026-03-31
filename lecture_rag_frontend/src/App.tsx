@@ -59,6 +59,7 @@ function App() {
         </div>
         <nav id="sidebar">
           <ConversationList conversations={conversations}
+                            setConversations={setConversations}
                             currConversationId={currConversationId}
                             setCurrConversationId={setCurrConversationId}
                             setCurrConversation={setCurrConversation}/>

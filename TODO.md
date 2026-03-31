@@ -1,13 +1,5 @@
-NEXT UP:     
-- Add a way to delete conversations
-
-  OPTIONAL FEATURES:
-
-
-  NOT SURE IF HELPFUL:
-  -- Add routing (?)
-  -- Add query enrichment for retrieval
-  -- Add structured query step that pulls course number from query, if present
+NEXT UP:
+- Testing and prompt refinement
 
 
   FACTS:

@@ -9,6 +9,7 @@ from src.services.generate_summary import generate_summary
 from src.services.history_retrieval import retrieve_history
 from src.services.update_history import update_history
 from src.services.update_with_summary import update_with_summary
+from src.services.conversation_deletion import conversation_deletion
 
 chat_bp = Blueprint("chat", __name__)
 
@@ -24,6 +25,11 @@ def get_conversations():
     conversations = retrieve_all_conversations(conversation_ids)
     return jsonify(conversations)
 
+@chat_bp.route("/api/delete/<resource_id>", methods=["DELETE"])
+def delete_conversation(resource_id):
+    conversation_deletion(resource_id)
+
+    return '', 204
 
 @chat_bp.route("/", methods=["POST"])
 def contact_llm():
