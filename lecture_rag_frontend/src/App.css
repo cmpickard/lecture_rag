@@ -1,8 +1,40 @@
 /* =====================================================================
-   THEME 4: "Crimson Hall"
-   Deep crimson sidebar and header, ivory background, gold accent.
-   Feels authoritative and distinguished — Oxford common room energy.
+   VARIANT 3b: "Crimson Grove"
+   Peach Grove's soft rounded warmth — bubble messages, EB Garamond,
+   Nunito, generous spacing — wearing Crimson Hall's palette:
+   deep crimson, ivory, gold accent, rose tones.
    ===================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Nunito:wght@300;400;500;600&display=swap');
+
+:root {
+  --cg-bg:          #f8f4ef;   /* Crimson Hall main bg */
+  --cg-panel:       #faf6f0;   /* chat panel bg */
+  --cg-form:        #ede5d8;   /* query form bg */
+  --cg-border:      #ddd0b8;   /* warm mid border */
+  --cg-border-dark: #c8b898;   /* input/slider border */
+  --cg-crimson:     #6b1d2c;   /* primary: header, sidebar, btn */
+  --cg-crimson-dim: rgba(107, 29, 44, 0.13);
+  --cg-crimson-faint: rgba(107, 29, 44, 0.05);
+  --cg-crimson-hover: #8a2a3a;
+  --cg-gold:        #c9a227;   /* accent */
+  --cg-gold-dim:    rgba(201, 162, 39, 0.18);
+  --cg-cream:       #f5e8d8;   /* header text, slider thumb */
+  --cg-rose-sub:    #e8c0b0;   /* header subtitle */
+  --cg-text:        #1a1215;   /* main text */
+  --cg-text-dim:    #6a4050;   /* dimmed text */
+  --cg-text-faint:  #b09090;
+  --cg-user-bg:     #f5dde2;   /* user message bg */
+  --cg-user-border: #dca8b0;
+  --cg-user-text:   #3a1020;
+  --cg-asst-bg:     #fff9f2;   /* assistant message bg */
+  --cg-asst-border: #ddd0b8;
+  --cg-asst-text:   #6a1215;
+  --cg-sidebar:     #6b1d2c;
+  --cg-sidebar-text: #e8c8d0;
+  --cg-sidebar-dim: rgba(232, 200, 208, 0.55);
+  --cg-nametag:     #cf0d2c;
+}
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -12,9 +44,9 @@
 
 html, body, #root {
   height: 100%;
-  font-family: 'Georgia';
-  background-color: #f8f4ef;
-  color: #1a1215;
+  font-family: 'EB Garamond', Georgia, serif;
+  background-color: var(--cg-bg);
+  color: var(--cg-text);
 }
 
 #app {
@@ -30,84 +62,97 @@ html, body, #root {
   overflow: hidden;
 }
 
+/* ---- Header ---- */
 #app-title {
-  background-color: #6b1d2c;
-  color: #f5e8d8;
-  padding: 0.6rem 1.5rem 0.7rem;
-  font-size: 1.5rem;
-  font-weight: normal;
-  letter-spacing: 0.04em;
-  border-bottom: 3px solid #c9a227;
+  background-color: var(--cg-crimson);
+  color: var(--cg-cream);
+  padding: 0.65rem 1.5rem 0.75rem;
+  font-size: 1.55rem;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.01em;
+  border-bottom: 3px solid var(--cg-gold);
   line-height: 1.1;
 }
 
 #app-subtitle {
   display: block;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;
-  font-size: 0.6em;
-  font-style: italic;
-  letter-spacing: 0.08em;
-  color: #e8c0b0;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.52em;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cg-rose-sub);
   margin-top: 0.2em;
 }
 
+/* ---- Chat panel ---- */
 #chat-panel {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background-color: #faf6f0;
-  border-right: 1px solid #d8c8b8;
+  background-color: var(--cg-panel);
+  border-right: 1px solid var(--cg-border);
 }
 
 #dialog-box {
   flex: 1;
   overflow-y: auto;
   list-style: none;
-  padding: 1.25rem 1.5rem;
+  padding: 1.5rem 1.75rem;
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  gap: 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--cg-border) transparent;
 }
 
 #name-tag {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: 800;
-  color: #cf0d2c;
-  /* font-style:oblique; */
-  font-size: 14px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  color: var(--cg-nametag);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .message {
   max-width: 78%;
-  padding: 0.7rem 1rem;
-  border-radius: 4px;
-  line-height: 1.35;
-  font-size: 0.97rem;
+  padding: 0.75rem 1.1rem;
+  border-radius: 12px;
+  line-height: 1.45;
+  font-size: 1.02rem;
 }
 
 .message[data-role="user"] {
   align-self: flex-end;
-  background-color: #f5dde2;
-  border: 1px solid #dca8b0;
-  color: #3a1020;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;
-  font-weight: 500;
+  background-color: var(--cg-user-bg);
+  border: 1px solid var(--cg-user-border);
+  color: var(--cg-user-text);
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  border-bottom-right-radius: 3px;
 }
 
 .message[data-role="assistant"] {
   align-self: flex-start;
-  background-color: #fff9f2;
-  border: 1px solid #ddd0b8;
-  color: #6a1215;
+  background-color: var(--cg-asst-bg);
+  border: 1px solid var(--cg-asst-border);
+  color: var(--cg-asst-text);
+  border-bottom-left-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
 }
 
+/* ---- Query form ---- */
 #query-form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 0.85rem 1.25rem;
-  background-color: #ede5d8;
-  border-top: 2px solid #c9a227;
+  padding: 0.9rem 1.25rem;
+  background-color: var(--cg-form);
+  border-top: 2px solid var(--cg-gold);
 }
 
 #query-row {
@@ -128,16 +173,16 @@ html, body, #root {
 }
 
 .switch-label {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 0.82rem;
-  color: #3a1020;
+  color: var(--cg-text-dim);
   letter-spacing: 0.02em;
-  transition: color 0.15s, font-weight 0.15s;
+  transition: color 0.15s;
 }
 
 .switch-label.active-mode {
-  font-weight: bold;
-  color: #6b1d2c;
+  font-weight: 600;
+  color: var(--cg-crimson);
 }
 
 .switch {
@@ -158,7 +203,7 @@ html, body, #root {
 .slider {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: #c8b898;
+  background-color: var(--cg-border-dark);
   border-radius: 24px;
   transition: background-color 0.2s;
 }
@@ -170,14 +215,14 @@ html, body, #root {
   width: 18px;
   left: 3px;
   bottom: 3px;
-  background-color: #f5e8d8;
+  background-color: var(--cg-cream);
   border-radius: 50%;
   transition: transform 0.2s;
   box-shadow: 0 1px 3px rgba(0,0,0,0.25);
 }
 
 .switch input:checked + .slider {
-  background-color: #6b1d2c;
+  background-color: var(--cg-crimson);
 }
 
 .switch input:checked + .slider::before {
@@ -192,11 +237,12 @@ html, body, #root {
   width: 17px;
   height: 17px;
   border-radius: 50%;
-  background-color: #c9a227;
-  color: #f5e8d8;
-  font-family: Georgia, serif;
+  background-color: var(--cg-gold);
+  color: var(--cg-cream);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;
+  font-style: normal;
   font-size: 0.72rem;
-  font-weight: bold;
+  font-weight: 700;
   cursor: help;
   margin-left: 0.2rem;
   flex-shrink: 0;
@@ -210,18 +256,19 @@ html, body, #root {
   left: 50%;
   transform: translateX(-50%);
   background-color: #3a1020;
-  color: #f5e8d8;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;
-  font-size: 0.8rem;
-  padding: 0.45rem 0.65rem;
-  border-radius: 3px;
+  color: var(--cg-cream);
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.78rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
   width: 230px;
   text-align: center;
-  line-height: 1.4;
+  line-height: 1.45;
   transition: opacity 0.15s;
   pointer-events: none;
   z-index: 10;
   white-space: normal;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
 }
 
 .tooltip-anchor:hover .tooltip-text {
@@ -240,43 +287,49 @@ html, body, #root {
   min-height: 80px;
   max-height: 40vh;
   overflow-y: auto;
-  padding: 0.6rem 0.8rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;
-  font-size: 0.95rem;
+  padding: 0.65rem 0.9rem;
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.05rem;
   background-color: #fffdf8;
-  border: 1px solid #c8b898;
-  border-radius: 3px;
-  color: #1a1215;
+  border: 1px solid var(--cg-border-dark);
+  border-radius: 10px;
+  color: var(--cg-text);
   outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 #query-input:focus {
-  border-color: #6b1d2c;
-  box-shadow: 0 0 0 2px rgba(107, 29, 44, 0.15);
+  border-color: var(--cg-crimson);
+  box-shadow: 0 0 0 3px var(--cg-crimson-dim);
 }
 
 #submit-btn {
   padding: 0.55rem 1.25rem;
   height: 80px;
-  background-color: #6b1d2c;
-  color: #f5e8d8;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;
-  font-size: 0.95rem;
+  background-color: var(--cg-crimson);
+  color: var(--cg-cream);
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
   border: none;
-  border-radius: 3px;
+  border-radius: 10px;
   cursor: pointer;
   letter-spacing: 0.03em;
-  transition: background-color 0.15s;
+  transition: background-color 0.2s, box-shadow 0.2s;
 }
 
 #submit-btn:hover {
-  background-color: #8a2a3a;
+  background-color: var(--cg-crimson-hover);
+  box-shadow: 0 2px 8px rgba(107, 29, 44, 0.35);
 }
 
+/* ---- Sidebar ---- */
 #sidebar {
-  background-color: #6b1d2c;
+  background-color: var(--cg-sidebar);
   overflow-y: auto;
   padding: 1rem 0;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(232, 200, 208, 0.3) transparent;
 }
 
 #conversation-list {
@@ -290,9 +343,10 @@ html, body, #root {
 #conversation-list::before {
   content: "Conversations";
   display: block;
-  color: #c9a227;
-  font-size: 0.75rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;
+  color: var(--cg-gold);
+  font-size: 0.72rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   padding: 0 0.6rem 0.6rem;
@@ -301,7 +355,7 @@ html, body, #root {
 .convo-item {
   display: flex;
   align-items: center;
-  border-radius: 3px;
+  border-radius: 8px;
 }
 
 .convo-item form {
@@ -319,17 +373,19 @@ html, body, #root {
   background: none;
   border: none;
   cursor: pointer;
-  color: #e8c8d0;
+  color: var(--cg-sidebar-text);
   font-size: 1.1rem;
   line-height: 1;
   height: 100%;
   padding: 0 0.4rem;
-  border-radius: 3px;
+  border-radius: 8px;
   transition: color 0.12s, background-color 0.12s;
+  opacity: 0.7;
 }
 
 .delete-btn:hover {
-  color: #f5e8d8;
+  opacity: 1;
+  color: var(--cg-cream);
   background-color: rgba(255, 255, 255, 0.15);
 }
 
@@ -338,12 +394,13 @@ html, body, #root {
   flex: 1;
   min-width: 0;
   padding: 0.55rem 0.75rem;
-  color: #e8c8d0;
+  color: var(--cg-sidebar-text);
   text-decoration: none;
   font-size: 0.88rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;
-  border-radius: 3px;
-  transition: background-color 0.12s, color 0.12s;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  border-radius: 8px;
+  transition: background-color 0.15s, color 0.15s;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -351,13 +408,13 @@ html, body, #root {
 
 .convo-link:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  color: #f5e8d8;
+  color: var(--cg-cream);
 }
 
 .convo-link.active {
-  background-color: rgba(201, 162, 39, 0.25);
+  background-color: var(--cg-gold-dim);
   color: #f0d88a;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .new-convo-item {
@@ -367,77 +424,57 @@ html, body, #root {
 }
 
 .new-convo-item .convo-link {
-  color: #c9a227;
+  color: var(--cg-gold);
   font-style: italic;
+  font-family: 'EB Garamond', serif;
+  font-size: 0.95rem;
 }
 
 .new-convo-item .convo-link:hover {
-  background-color: rgba(201, 162, 39, 0.15);
+  background-color: var(--cg-gold-dim);
   color: #f0d88a;
 }
 
 /* =====================================================================
-   MARKDOWN RENDERING inside .message bubbles
+   MARKDOWN RENDERING
    ===================================================================== */
 
-.message > * + * {
-  margin-top: 0.6em;
-}
+.message > * + * { margin-top: 0.6em; }
+.message p { margin: 0; line-height: 1.65; }
+.message p + p { margin-top: 0.6em; }
 
-.message p {
-  margin: 0;
-  line-height: 1.55;
-}
-
-.message p + p {
-  margin-top: 0.55em;
-}
-
-.message h1,
-.message h2,
-.message h3,
-.message h4 {
-  font-family: Georgia, serif;
-  font-weight: bold;
-  color: #6b1d2c;
+.message h1, .message h2, .message h3, .message h4 {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-weight: 700;
+  color: var(--cg-crimson);
   line-height: 1.2;
   margin-top: 0.9em;
   margin-bottom: 0.25em;
 }
 
-.message h1 { font-size: 1.2em; border-bottom: 1px solid #ddd0b8; padding-bottom: 0.2em; }
-.message h2 { font-size: 1.08em; }
-.message h3 { font-size: 0.97em; }
-.message h4 { font-size: 0.9em; font-style: italic; }
+.message h1 { font-size: 1.25em; border-bottom: 1px solid var(--cg-border); padding-bottom: 0.2em; }
+.message h2 { font-size: 1.12em; }
+.message h3 { font-size: 1.0em; }
+.message h4 { font-size: 0.95em; font-style: italic; }
 
-.message ul,
-.message ol {
-  padding-left: 1.4em;
-  margin: 0.4em 0;
-}
-
-.message li {
-  margin: 0.2em 0;
-  line-height: 1.45;
-}
-
-.message li + li {
-  margin-top: 0.15em;
-}
+.message ul, .message ol { padding-left: 1.4em; margin: 0.4em 0; }
+.message li { margin: 0.2em 0; line-height: 1.5; }
+.message li + li { margin-top: 0.15em; }
 
 .message code {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 0.88em;
-  background-color: rgba(107, 29, 44, 0.08);
-  color: #6b1d2c;
-  border-radius: 3px;
+  font-size: 0.85em;
+  background-color: var(--cg-crimson-faint);
+  color: var(--cg-crimson);
+  border-radius: 4px;
   padding: 0.1em 0.35em;
+  border: 1px solid rgba(107, 29, 44, 0.15);
 }
 
 .message pre {
   background-color: #2a0c12;
-  color: #f5e8d8;
-  border-radius: 4px;
+  color: var(--cg-cream);
+  border-radius: 8px;
   padding: 0.75em 1em;
   overflow-x: auto;
   font-size: 0.86em;
@@ -445,49 +482,21 @@ html, body, #root {
   margin: 0.5em 0;
 }
 
-.message pre code {
-  background: none;
-  color: inherit;
-  padding: 0;
-  font-size: inherit;
-}
+.message pre code { background: none; color: inherit; padding: 0; font-size: inherit; border: none; }
 
 .message blockquote {
-  border-left: 3px solid #c9a227;
+  border-left: 3px solid var(--cg-gold);
   margin: 0.5em 0;
   padding: 0.3em 0.75em;
   color: #5a3a20;
   font-style: italic;
   background-color: rgba(201, 162, 39, 0.07);
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 8px 8px 0;
 }
 
-.message blockquote p {
-  margin: 0;
-}
-
-.message hr {
-  border: none;
-  border-top: 1px solid #ddd0b8;
-  margin: 0.75em 0;
-}
-
-.message strong {
-  font-weight: 700;
-  color: inherit;
-}
-
-.message em {
-  font-style: italic;
-}
-
-.message a {
-  color: #6b1d2c;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
-.message a:hover {
-  color: #8a2a3a;
-}
-
+.message blockquote p { margin: 0; }
+.message hr { border: none; border-top: 1px solid var(--cg-border); margin: 0.75em 0; }
+.message strong { font-weight: 700; color: inherit; }
+.message em { font-style: italic; }
+.message a { color: var(--cg-crimson); text-decoration: underline; text-underline-offset: 2px; }
+.message a:hover { color: var(--cg-crimson-hover); }
