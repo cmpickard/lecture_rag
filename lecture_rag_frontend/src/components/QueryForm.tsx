@@ -79,19 +79,21 @@ export default function QueryForm({ currConversation, setCurrConversation,
   <form id="query-form" onSubmit={handleSubmitQuery}>
     <div id="query-row">
       <textarea id="query-input" ref={textareaRef} onChange={handleTyping} value={query} placeholder="Ask a question..."></textarea>
-      <button id="submit-btn" disabled={isSubmitting}>{isSubmitting ? '...' : 'Submit'}</button>
-    </div>
-    <div id="mode-row">
-      <div className="switch-wrapper">
-        <span className={`switch-label${!isDialogue ? ' active-mode' : ''}`}>Instruction</span>
-        <label className="switch" htmlFor="toggle-option">
-          <input type="checkbox" id="toggle-option" onChange={e => setIsDialogue(e.target.checked)} />
-          <span className="slider"></span>
-        </label>
-        <span className={`switch-label${isDialogue ? ' active-mode' : ''}`}>Dialogue</span>
-        <span className="tooltip-anchor">?
-          <span className="tooltip-text">Use <strong>Instruction Mode</strong> for quick, direct explanations. Use <strong>Dialogue Mode</strong> for deeper investigation.</span>
-        </span>
+      <div id="query-right-col">
+        <button id="submit-btn" disabled={isSubmitting}>{isSubmitting ? '...' : 'Submit'}</button>
+        <div id="mode-row">
+          <div className="switch-wrapper">
+            <span className={`switch-label${!isDialogue ? ' active-mode' : ''}`}>Instruction</span>
+            <label className="switch" htmlFor="toggle-option">
+              <input type="checkbox" id="toggle-option" onChange={e => setIsDialogue(e.target.checked)} />
+              <span className="slider"></span>
+            </label>
+            <span className={`switch-label${isDialogue ? ' active-mode' : ''}`}>Dialogue</span>
+            <span className="tooltip-anchor">?
+              <span className="tooltip-text">Use <strong>Instruction Mode</strong> for quick, direct explanations. Use <strong>Dialogue Mode</strong> for deeper investigation.</span>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   </form>
