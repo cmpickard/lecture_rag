@@ -1,10 +1,10 @@
 import { type Conversation } from '../types/conversation'
 import ReactMarkdown from 'react-markdown';
 
-export default function DialogBox({currConversation}:
-    {currConversation: Conversation})
+export default function DialogBox({ currConversation, isThinking }:
+    { currConversation: Conversation, isThinking: boolean })
   {
-  
+
   let nextKey = 0;
 
   return (<ul id="dialog-box">
@@ -16,5 +16,11 @@ export default function DialogBox({currConversation}:
                 </li>
       })
     }
+    {isThinking && (
+      <li className="message thinking-indicator" data-role="assistant">
+        <span className="name-tag">Talkrates</span>
+        <span className="thinking-dots">Thinking<span>.</span><span>.</span><span>.</span></span>
+      </li>
+    )}
   </ul>)
 }

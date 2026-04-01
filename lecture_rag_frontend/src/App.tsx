@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import Header from './components/Header.tsx'
 import DialogBox from './components/DialogBox.tsx'
@@ -6,6 +7,7 @@ import ConversationList from './components/ConversationList.tsx'
 import { useConversations } from './hooks/useConversations.ts'
 
 function App() {
+  const [isThinking, setIsThinking] = useState(false);
   const {
     currConversationId, setCurrConversationId,
     currConversation, setCurrConversation,
@@ -19,7 +21,7 @@ function App() {
       {error && <p id="error-banner">{error}</p>}
       <div id="main-layout">
         <div id="chat-panel">
-          <DialogBox currConversation={currConversation}/>
+          <DialogBox currConversation={currConversation} isThinking={isThinking}/>
           <QueryForm
             currConversation={currConversation}
             setCurrConversation={setCurrConversation}
@@ -27,6 +29,7 @@ function App() {
             currConversationId={currConversationId}
             setCurrConversationId={setCurrConversationId}
             addIdToStorage={addIdToStorage}
+            setIsThinking={setIsThinking}
           />
         </div>
         <nav id="sidebar">
