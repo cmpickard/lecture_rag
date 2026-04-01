@@ -8,7 +8,7 @@ import { postQuery } from '../api/conversationApi'
 export default function QueryForm({ currConversation, setCurrConversation,
                                     setConversations,
                                     currConversationId, setCurrConversationId,
-                                    addIdToStorage }:
+                                    addIdToStorage, setIsThinking }:
   {
     currConversation: Conversation,
     setCurrConversation: React.Dispatch<React.SetStateAction<Conversation>>,
@@ -16,6 +16,7 @@ export default function QueryForm({ currConversation, setCurrConversation,
     currConversationId: string,
     setCurrConversationId: React.Dispatch<React.SetStateAction<string>>,
     addIdToStorage: (id: string) => void,
+    setIsThinking: React.Dispatch<React.SetStateAction<boolean>>,
   }) {
 
   const [query, setQuery] = useState('');
@@ -41,6 +42,7 @@ export default function QueryForm({ currConversation, setCurrConversation,
     const new_query: Query = { ...new_msg, conversation_id: currConversationId, dialogue_mode: isDialogue };
 
     setIsSubmitting(true);
+    setIsThinking(true);
     try {
       const message = await postQuery(new_query);
 
@@ -64,6 +66,7 @@ export default function QueryForm({ currConversation, setCurrConversation,
       console.error(error);
     } finally {
       setIsSubmitting(false);
+      setIsThinking(false);
     }
   }
 
