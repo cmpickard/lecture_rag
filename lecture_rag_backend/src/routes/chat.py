@@ -3,13 +3,16 @@ from flask import Blueprint, request, jsonify
 from src.config import BASIC_MODEL, DIALOGUE_MODEL, BASIC_PROMPT_PATH, DIALOGUE_PROMPT_PATH
 from src.extensions import client
 from src.services.build_prompt import build_prompt
-from src.services.context_retrieval import retrieve_most_similar
+from src.services.context_retrieval import retrieve_most_similar, get_embedding
 from src.services.conversations_retrieval import retrieve_all_conversations
 from src.services.generate_summary import generate_summary
-from src.services.history_retrieval import retrieve_history
+from src.services.retrieve_or_create_history import retrieve_or_create_history
 from src.services.update_history import update_history
 from src.services.update_with_summary import update_with_summary
 from src.services.conversation_deletion import conversation_deletion
+from src.services.cache_lookup import cache_lookup
+from src.services.classify_query import classify_query
+from src.services.cache_write import cache_write
 
 chat_bp = Blueprint("chat", __name__)
 
@@ -38,16 +41,38 @@ def contact_llm():
     conversation_id = data["conversation_id"]
     dialogue_mode = data["dialogue_mode"]
 
-    context = retrieve_most_similar(query)
+    found_history = retrieve_or_create_history(conversation_id, query)
 
-    result = retrieve_history(conversation_id, query)
-
-    if isinstance(result, str):  # first-time query — result is the new UUID
+    if isinstance(found_history, str):
         history = ""
-        conversation_id = result
+        conversation_id = found_history
     else:
-        history = result
+        history = found_history
         update_history("user", query, conversation_id)
+
+    query_embedding = get_embedding(query)
+    cacheable = False
+    cache_hit = cache_lookup(query_embedding, dialogue_mode)
+
+    if cache_hit:
+        print("\n\033[92m[CACHE HIT]\033[0m Returning cached response.\n")
+        update_history("assistant", cache_hit, conversation_id)
+        summary = None
+        if history == "":
+            conversation = f"user: {query} \n assistant: {cache_hit}"
+            summary = generate_summary(conversation)
+            update_with_summary(summary, conversation_id)
+        return jsonify({"role": "assistant", "content": cache_hit,
+                    "conversation_id": conversation_id, "summary": summary})
+    else:
+        cacheable = classify_query(query)
+        if cacheable:
+            print("\n\033[93m[CACHE MISS — CACHEABLE]\033[0m Response will be cached.\n")
+        else:
+            print("\n\033[94m[CACHE MISS — NOT CACHEABLE]\033[0m Response will not be cached.\n")
+
+    
+    context = retrieve_most_similar(query_embedding)
 
     if (dialogue_mode == False):
         with open(BASIC_PROMPT_PATH, "r") as f:
@@ -67,6 +92,10 @@ def contact_llm():
     )
 
     output = response.output_text
+
+    if cacheable:
+        cache_write(query_embedding, query, output, dialogue_mode)
+
     update_history("assistant", output, conversation_id)
 
     summary = None

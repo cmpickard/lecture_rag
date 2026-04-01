@@ -1,7 +1,18 @@
 NEXT UP:
+- a cache for basic "explain concept X" queries? (would I need to use
+that in conjunction with routing?)
+- routing? then i have a "two tier" routing structure -- with the user able to
+select the model, and me able to modify the system prompt I'm sending.
+  - ROUTES:
+    - Explain
+    - Check understanding
+    - Develop paper / ideas 
+
 - Testing
   - Ask AI to generate testing suite for basic functionality on front- back-ends
-    
+  
+- Move the switch over next to the submit button so it's a better reminder to
+use it
 
 
 OPTIONAL:

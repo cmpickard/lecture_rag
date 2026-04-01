@@ -19,9 +19,7 @@ def extract_contents(results):
     return [row[1] for row in results]
 
 
-def retrieve_most_similar(query):
-    new_embedding = get_embedding(query)
-
+def retrieve_most_similar(new_embedding):
     conn = psycopg2.connect(
         host="localhost",
         port=5432,

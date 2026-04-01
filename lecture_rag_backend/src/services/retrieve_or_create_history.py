@@ -1,7 +1,7 @@
 import psycopg2
 import json
 
-def retrieve_history(uuid, query):
+def retrieve_or_create_history(uuid, query):
     conn = psycopg2.connect(
         host='localhost',
         port=5432,
