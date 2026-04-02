@@ -12,11 +12,13 @@ def update_history(role, content, uuid):
     cursor = conn.cursor()
 
     try:
+        message = json.dumps([{"role": role, "content": content}])
         cursor.execute("""
             UPDATE conversations
-            SET history = history || %s
+            SET history = history || %s,
+                llm_context = llm_context || %s
             WHERE id = %s;
-            """, (json.dumps([{"role": role, "content": content}]), uuid))
+            """, (message, message, uuid))
         conn.commit()
     except Exception as e:
         print("Error updating history:", e)
@@ -26,6 +28,3 @@ def update_history(role, content, uuid):
         conn.close()
 
     return
-
-# test
-# update_history('user', 'Tell me about yourself', '9f8cd020-14c0-4bda-b62f-84c17d168bd3')

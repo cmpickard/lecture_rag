@@ -16,24 +16,25 @@ def retrieve_or_create_history(uuid, query):
     try:
         if uuid != '':
             cursor.execute("""
-                SELECT history
+                SELECT history, llm_context
                 FROM conversations
                 WHERE id = %s
             """, (uuid,))
-            
+
             row = cursor.fetchone()
-            
+
             if row:
-                result = row[0]
+                result = {"history": row[0], "llm_context": row[1]}
 
         else:
+            initial_message = json.dumps([{"role": "user", "content": query}])
             cursor.execute(
-                "INSERT INTO conversations (history) VALUES (%s) RETURNING id;",
-                (json.dumps([{"role": "user", "content": query}]),)
+                "INSERT INTO conversations (history, llm_context) VALUES (%s, %s) RETURNING id;",
+                (initial_message, initial_message)
             )
             result = cursor.fetchone()[0]
             conn.commit()
-            
+
     except Exception as e:
         print("Error retrieving history:", e)
 
@@ -41,11 +42,4 @@ def retrieve_or_create_history(uuid, query):
         cursor.close()
         conn.close()
 
-    return result # the history JSONB value, or UUID 
-
-# test
-# history = retrieve_history('9f8cd020-14c0-4bda-b62f-84c17d168bd3')
-# print(history)
-
-# uuid = retrieve_history('', "Tell me about the Ontological Argument.")
-# print(uuid)
+    return result  # dict {"history": ..., "llm_context": ...} for existing, or UUID string for new

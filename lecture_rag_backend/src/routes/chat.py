@@ -51,13 +51,15 @@ def contact_llm():
 
     if isinstance(found_history, str):
         history = ""
+        llm_context = ""
         conversation_id = found_history
     else:
-        history = found_history
-        if history_is_too_long(history):
-            compacted = compact_history(history)
+        history = found_history["history"]
+        llm_context = found_history["llm_context"]
+        if history_is_too_long(llm_context):
+            compacted = compact_history(llm_context)
             replace_history(compacted, conversation_id)
-            history = [{"role": "system", "content": f"Previous conversation summary: {compacted}"}]
+            llm_context = [{"role": "system", "content": f"Previous conversation summary: {compacted}"}]
         update_history("user", query, conversation_id)
 
     query_embedding = get_embedding(query)
@@ -86,10 +88,10 @@ def contact_llm():
 
     if (dialogue_mode == False):
         with open(BASIC_PROMPT_PATH, "r") as f:
-            instructions = f.read().format(context=context, history=history)
+            instructions = f.read().format(context=context, history=llm_context)
     elif (dialogue_mode == True):
         with open(DIALOGUE_PROMPT_PATH, "r") as f:
-            instructions = f.read().format(context=context, history=history)
+            instructions = f.read().format(context=context, history=llm_context)
     else:
         print("DIALOG_MODE IS NOT A BOOLEAN")
 

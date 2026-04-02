@@ -12,14 +12,32 @@ class TestRetrieveOrCreateHistory:
     # -----------------------------------------------------------------------
     # Retrieving an existing conversation
     # -----------------------------------------------------------------------
-    def test_returns_history_for_existing_uuid(self, mocker):
+    def test_returns_dict_for_existing_uuid(self, mocker):
         make_db_mock(
             mocker, "src.services.retrieve_or_create_history",
-            fetchone=(HISTORY,)
+            fetchone=(HISTORY, HISTORY)
         )
         from src.services.retrieve_or_create_history import retrieve_or_create_history
         result = retrieve_or_create_history(EXISTING_UUID, "Any query")
-        assert result == HISTORY
+        assert result == {"history": HISTORY, "llm_context": HISTORY}
+
+    def test_history_key_contains_history(self, mocker):
+        make_db_mock(
+            mocker, "src.services.retrieve_or_create_history",
+            fetchone=(HISTORY, HISTORY)
+        )
+        from src.services.retrieve_or_create_history import retrieve_or_create_history
+        result = retrieve_or_create_history(EXISTING_UUID, "Any query")
+        assert result["history"] == HISTORY
+
+    def test_llm_context_key_contains_context(self, mocker):
+        make_db_mock(
+            mocker, "src.services.retrieve_or_create_history",
+            fetchone=(HISTORY, HISTORY)
+        )
+        from src.services.retrieve_or_create_history import retrieve_or_create_history
+        result = retrieve_or_create_history(EXISTING_UUID, "Any query")
+        assert result["llm_context"] == HISTORY
 
     def test_returns_none_when_uuid_not_found(self, mocker):
         make_db_mock(mocker, "src.services.retrieve_or_create_history", fetchone=None)
@@ -30,7 +48,7 @@ class TestRetrieveOrCreateHistory:
     def test_does_not_commit_when_retrieving(self, mocker):
         _, _, conn = make_db_mock(
             mocker, "src.services.retrieve_or_create_history",
-            fetchone=(HISTORY,)
+            fetchone=(HISTORY, HISTORY)
         )
         from src.services.retrieve_or_create_history import retrieve_or_create_history
         retrieve_or_create_history(EXISTING_UUID, "Any query")
@@ -58,7 +76,7 @@ class TestRetrieveOrCreateHistory:
         sql_call = cursor.execute.call_args[0][0]
         assert "INSERT" in sql_call.upper()
 
-    def test_initial_message_contains_user_query(self, mocker):
+    def test_initial_history_contains_user_query(self, mocker):
         _, cursor, _ = make_db_mock(
             mocker, "src.services.retrieve_or_create_history",
             fetchone=(NEW_UUID,)
@@ -66,10 +84,19 @@ class TestRetrieveOrCreateHistory:
         from src.services.retrieve_or_create_history import retrieve_or_create_history
         retrieve_or_create_history("", "What is consciousness?")
         params = cursor.execute.call_args[0][1]
-        history_json = params[0]
-        history = json.loads(history_json)
+        history = json.loads(params[0])
         assert history[0]["role"] == "user"
         assert history[0]["content"] == "What is consciousness?"
+
+    def test_initial_llm_context_matches_history(self, mocker):
+        _, cursor, _ = make_db_mock(
+            mocker, "src.services.retrieve_or_create_history",
+            fetchone=(NEW_UUID,)
+        )
+        from src.services.retrieve_or_create_history import retrieve_or_create_history
+        retrieve_or_create_history("", "What is consciousness?")
+        params = cursor.execute.call_args[0][1]
+        assert params[0] == params[1]
 
     def test_commits_when_creating_new_conversation(self, mocker):
         _, _, conn = make_db_mock(
@@ -86,7 +113,7 @@ class TestRetrieveOrCreateHistory:
     def test_closes_connection(self, mocker):
         _, cursor, conn = make_db_mock(
             mocker, "src.services.retrieve_or_create_history",
-            fetchone=(HISTORY,)
+            fetchone=(HISTORY, HISTORY)
         )
         from src.services.retrieve_or_create_history import retrieve_or_create_history
         retrieve_or_create_history(EXISTING_UUID, "Q")

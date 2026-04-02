@@ -18,7 +18,7 @@ class TestUpdateHistory:
         sql = cursor.execute.call_args[0][0]
         assert "UPDATE" in sql.upper()
 
-    def test_appends_correct_role_and_content(self, mocker):
+    def test_appends_correct_role_and_content_to_history(self, mocker):
         _, cursor, _ = make_db_mock(mocker, "src.services.update_history")
         from src.services.update_history import update_history
         update_history("assistant", "Virtue is excellence.", UUID)
@@ -26,12 +26,19 @@ class TestUpdateHistory:
         appended = json.loads(params[0])
         assert appended == [{"role": "assistant", "content": "Virtue is excellence."}]
 
+    def test_appends_same_message_to_llm_context(self, mocker):
+        _, cursor, _ = make_db_mock(mocker, "src.services.update_history")
+        from src.services.update_history import update_history
+        update_history("assistant", "Virtue is excellence.", UUID)
+        params = cursor.execute.call_args[0][1]
+        assert params[0] == params[1]
+
     def test_passes_uuid_as_where_clause_param(self, mocker):
         _, cursor, _ = make_db_mock(mocker, "src.services.update_history")
         from src.services.update_history import update_history
         update_history("user", "Q", UUID)
         params = cursor.execute.call_args[0][1]
-        assert params[1] == UUID
+        assert params[2] == UUID
 
     def test_commits_transaction(self, mocker):
         _, _, conn = make_db_mock(mocker, "src.services.update_history")

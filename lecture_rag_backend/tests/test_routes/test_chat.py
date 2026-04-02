@@ -36,12 +36,12 @@ def patch_all_services(mocker, *, cache_hit=None, cacheable=False,
     Patch every service imported by chat.py and return the mock objects
     in a dict for assertion in individual tests.
     """
-    new_or_existing = NEW_UUID if is_new_conversation else (history if history is not None else HISTORY)
+    h = history if history is not None else HISTORY
 
     mocks = {
         "retrieve_or_create_history": mocker.patch(
             "src.routes.chat.retrieve_or_create_history",
-            return_value=NEW_UUID if is_new_conversation else (history if history is not None else HISTORY),
+            return_value=NEW_UUID if is_new_conversation else {"history": h, "llm_context": h},
         ),
         "get_embedding": mocker.patch(
             "src.routes.chat.get_embedding",

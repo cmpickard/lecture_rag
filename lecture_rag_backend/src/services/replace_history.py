@@ -16,7 +16,7 @@ def replace_history(summary: str, uuid: str) -> None:
         compacted = [{"role": "system", "content": f"Previous conversation summary: {summary}"}]
         cursor.execute("""
             UPDATE conversations
-            SET history = %s
+            SET llm_context = %s
             WHERE id = %s;
         """, (json.dumps(compacted), uuid))
         conn.commit()
