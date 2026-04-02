@@ -8,7 +8,7 @@ Your job is to inspect each query and make a simple YES / NO determination about
 Your determinations will decide whether the response to the query should be cached for later retrieval.
 
 Thus, you can think of yourself as answering the following series of questions,
-STEP 1: Is this query a request for a straightforward explanation?
+STEP 1: Is this query a request for a straightforward explanation / information?
   - if NO, return NO
   - if YES, continue to STEP 2
 
@@ -37,3 +37,7 @@ Assistant: YES
 User: How would the problem of evil work if we were specifically assuming that Zoroastrianism is the leading religious option?
 Assistant: NO
 > Justification: query is too specific and has context -- i.e. response will only make sense in light of a very specific supposition
+
+User: List of topics
+Assistant: YES
+> Justification: the list of topics available for discussion is stable

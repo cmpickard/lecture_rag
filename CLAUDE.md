@@ -16,7 +16,7 @@ lecture_rag/
 └── lecture_rag_frontend/    React + TypeScript (Vite)
 ```
 
-The backend runs a RAG pipeline: embed query → pgvector similarity search → build prompt with retrieved context + conversation history → call OpenAI.
+The backend runs a RAG pipeline: embed query → pgvector cache lookup (mode-aware) → if miss, classify query → pgvector similarity search → build prompt with retrieved context + conversation history → call OpenAI → write to cache if cacheable.
 
 ## Development
 
@@ -31,7 +31,7 @@ python app.py          # Runs on port 3000
 Requires:
 - PostgreSQL running on `localhost:5432` with database `lecture_rag` and the pgvector extension
 - `OPENAI_API_KEY` in `lecture_rag_backend/.env`
-- Tables initialized from `src/models/conversations.sql` and `src/models/data_chunks.sql`
+- Tables initialized from `src/models/conversations.sql`, `src/models/data_chunks.sql`, and `src/models/response_cache.sql`
 
 ### Frontend
 
@@ -52,6 +52,9 @@ The frontend hardcodes the backend URL as `http://localhost:3000`.
 | `lecture_rag_backend/app.py` | Flask app entry point |
 | `lecture_rag_backend/src/routes/chat.py` | API route handlers |
 | `lecture_rag_backend/src/services/context_retrieval.py` | pgvector semantic search |
+| `lecture_rag_backend/src/services/cache_lookup.py` | pgvector cache similarity search (mode-aware, threshold 0.92) |
+| `lecture_rag_backend/src/services/cache_write.py` | Insert cacheable responses into `response_cache` |
+| `lecture_rag_backend/src/services/classify_query.py` | Cheap LLM call to classify query as cacheable (YES/NO) |
 | `lecture_rag_backend/src/services/history_manager.py` | Conversation persistence |
 | `lecture_rag_backend/src/services/prompting.py` | Prompt construction |
 | `lecture_rag_backend/src/config.py` | Model names and prompt paths |
@@ -88,4 +91,20 @@ Models and prompt paths are set in `lecture_rag_backend/src/config.py`:
 ```python
 BASIC_MODEL = "gpt-5.4-nano"
 DIALOGUE_MODEL = "gpt-5.4"
+CLASSIFY_MODEL = "gpt-4.1-nano"           # Cheap classifier for cache eligibility
+CLASSIFY_MODEL_PROMPT = "./src/data/classify_prompt.md"
 ```
+
+## Caching
+
+Cacheable queries (standalone explanation requests like "Explain X") are stored in the `response_cache` table and reused on similar future queries, skipping the main LLM call entirely.
+
+**Order of operations per request:**
+1. Embed the query (`text-embedding-3-small`)
+2. Cache lookup — pgvector cosine similarity against `response_cache`, filtered by `dialogue_mode`, threshold `0.92`
+3. Cache hit → return cached response (still generates a summary if first turn)
+4. Cache miss → classify query via cheap LLM (`gpt-4.1-nano` + `classify_prompt.md`)
+5. Proceed with normal RAG pipeline
+6. If classified cacheable → write response to `response_cache`
+
+Cache entries are **mode-aware**: Instruction mode and Dialogue mode responses are stored and retrieved separately via the `dialogue_mode` boolean column on `response_cache`.
