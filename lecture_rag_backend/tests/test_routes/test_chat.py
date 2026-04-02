@@ -11,6 +11,8 @@ EXISTING_UUID = "d32ee5a6-4594-4c3d-aaec-717205c04cf4"
 NEW_UUID = "aaaaaaaa-0000-0000-0000-000000000001"
 DUMMY_EMBEDDING = [0.1] * 1536
 HISTORY = [{"role": "user", "content": "What is virtue?"}]
+# History whose total content exceeds HISTORY_CHAR_LIMIT (8000 chars)
+LONG_HISTORY = [{"role": "user", "content": "x" * 4001}, {"role": "assistant", "content": "x" * 4001}]
 
 
 # ---------------------------------------------------------------------------
@@ -64,6 +66,11 @@ def patch_all_services(mocker, *, cache_hit=None, cacheable=False,
             return_value="A generated title",
         ),
         "cache_write": mocker.patch("src.routes.chat.cache_write"),
+        "compact_history": mocker.patch(
+            "src.routes.chat.compact_history",
+            return_value="Compacted summary of prior conversation.",
+        ),
+        "replace_history": mocker.patch("src.routes.chat.replace_history"),
         "client": mocker.patch("src.routes.chat.client"),
     }
     mocks["client"].responses.create.return_value = \
@@ -286,3 +293,40 @@ class TestPostQueryCacheMiss:
         patch_all_services(mocker, is_new_conversation=True)
         data = post_query(client).get_json()
         assert data["conversation_id"] == NEW_UUID
+
+
+# ---------------------------------------------------------------------------
+# POST / — history compaction
+# ---------------------------------------------------------------------------
+class TestHistoryCompaction:
+    def test_compaction_triggered_when_history_too_long(self, mocker, client):
+        mocks = patch_all_services(mocker, history=LONG_HISTORY)
+        post_query(client)
+        mocks["compact_history"].assert_called_once_with(LONG_HISTORY)
+
+    def test_compaction_not_triggered_when_history_short(self, mocker, client):
+        mocks = patch_all_services(mocker, history=HISTORY)
+        post_query(client)
+        mocks["compact_history"].assert_not_called()
+
+    def test_replace_history_called_when_compaction_triggered(self, mocker, client):
+        mocks = patch_all_services(mocker, history=LONG_HISTORY)
+        post_query(client, conversation_id=EXISTING_UUID)
+        mocks["replace_history"].assert_called_once_with(
+            "Compacted summary of prior conversation.", EXISTING_UUID
+        )
+
+    def test_replace_history_not_called_when_no_compaction(self, mocker, client):
+        mocks = patch_all_services(mocker, history=HISTORY)
+        post_query(client)
+        mocks["replace_history"].assert_not_called()
+
+    def test_compaction_not_triggered_for_new_conversation(self, mocker, client):
+        mocks = patch_all_services(mocker, is_new_conversation=True)
+        post_query(client)
+        mocks["compact_history"].assert_not_called()
+
+    def test_returns_200_after_compaction(self, mocker, client):
+        patch_all_services(mocker, history=LONG_HISTORY)
+        response = post_query(client, conversation_id=EXISTING_UUID)
+        assert response.status_code == 200

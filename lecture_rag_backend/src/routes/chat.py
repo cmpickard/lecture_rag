@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 
-from src.config import BASIC_MODEL, DIALOGUE_MODEL, BASIC_PROMPT_PATH, DIALOGUE_PROMPT_PATH
+from src.config import BASIC_MODEL, DIALOGUE_MODEL, BASIC_PROMPT_PATH, DIALOGUE_PROMPT_PATH, HISTORY_CHAR_LIMIT
 from src.extensions import client
 from src.services.build_prompt import build_prompt
 from src.services.context_retrieval import retrieve_most_similar, get_embedding
@@ -13,6 +13,12 @@ from src.services.conversation_deletion import conversation_deletion
 from src.services.cache_lookup import cache_lookup
 from src.services.classify_query import classify_query
 from src.services.cache_write import cache_write
+from src.services.compact_history import compact_history
+from src.services.replace_history import replace_history
+
+
+def history_is_too_long(history: list) -> bool:
+    return sum(len(m["content"]) for m in history) > HISTORY_CHAR_LIMIT
 
 chat_bp = Blueprint("chat", __name__)
 
@@ -48,6 +54,10 @@ def contact_llm():
         conversation_id = found_history
     else:
         history = found_history
+        if history_is_too_long(history):
+            compacted = compact_history(history)
+            replace_history(compacted, conversation_id)
+            history = [{"role": "system", "content": f"Previous conversation summary: {compacted}"}]
         update_history("user", query, conversation_id)
 
     query_embedding = get_embedding(query)
