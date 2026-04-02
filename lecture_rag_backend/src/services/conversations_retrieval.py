@@ -11,6 +11,8 @@ def retrieve_conversation(uuid):
     cursor = conn.cursor()
 
     result = []
+    history = []
+    summary = ''
 
     try:
         cursor.execute("""
@@ -24,9 +26,6 @@ def retrieve_conversation(uuid):
         if row:
             history = row[0]
             summary = row[1]
-        else:
-            history = []
-            summary = ''
             
     except Exception as e:
         print("Error retrieving history:", e)
