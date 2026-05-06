@@ -1,3 +1,7 @@
+import os
+
+CACHE_ENABLED = os.getenv("CACHE_ENABLED", "true").lower() == "true"
+
 BASIC_MODEL = "gpt-5.4-nano"
 BASIC_PROMPT_PATH = "./src/data/basic_prompt.md"
 

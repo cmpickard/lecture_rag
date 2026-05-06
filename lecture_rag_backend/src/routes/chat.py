@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 
-from src.config import BASIC_MODEL, DIALOGUE_MODEL, BASIC_PROMPT_PATH, DIALOGUE_PROMPT_PATH, HISTORY_CHAR_LIMIT
+from src.config import BASIC_MODEL, DIALOGUE_MODEL, BASIC_PROMPT_PATH, DIALOGUE_PROMPT_PATH, HISTORY_CHAR_LIMIT, CACHE_ENABLED
 from src.extensions import client
 from src.services.build_prompt import build_prompt
 from src.services.context_retrieval import retrieve_most_similar, get_embedding
@@ -64,24 +64,26 @@ def contact_llm():
 
     query_embedding = get_embedding(query)
     cacheable = False
-    cache_hit = cache_lookup(query_embedding, dialogue_mode)
 
-    if cache_hit:
-        print("\n\033[92m[CACHE HIT]\033[0m Returning cached response.\n")
-        update_history("assistant", cache_hit, conversation_id)
-        summary = None
-        if history == "":
-            conversation = f"user: {query} \n assistant: {cache_hit}"
-            summary = generate_summary(conversation)
-            update_with_summary(summary, conversation_id)
-        return jsonify({"role": "assistant", "content": cache_hit,
-                    "conversation_id": conversation_id, "summary": summary})
-    else:
+    if CACHE_ENABLED:
+        cache_hit = cache_lookup(query_embedding, dialogue_mode)
+        if cache_hit:
+            print("\n\033[92m[CACHE HIT]\033[0m Returning cached response.\n")
+            update_history("assistant", cache_hit, conversation_id)
+            summary = None
+            if history == "":
+                conversation = f"user: {query} \n assistant: {cache_hit}"
+                summary = generate_summary(conversation)
+                update_with_summary(summary, conversation_id)
+            return jsonify({"role": "assistant", "content": cache_hit,
+                        "conversation_id": conversation_id, "summary": summary})
         cacheable = classify_query(query)
         if cacheable:
             print("\n\033[93m[CACHE MISS — CACHEABLE]\033[0m Response will be cached.\n")
         else:
             print("\n\033[94m[CACHE MISS — NOT CACHEABLE]\033[0m Response will not be cached.\n")
+    else:
+        print("\n\033[90m[CACHE DISABLED]\033[0m Skipping cache lookup and write.\n")
 
     
     context = retrieve_most_similar(query_embedding)
@@ -105,7 +107,7 @@ def contact_llm():
 
     output = response.output_text
 
-    if cacheable:
+    if CACHE_ENABLED and cacheable:
         cache_write(query_embedding, query, output, dialogue_mode)
 
     update_history("assistant", output, conversation_id)
